@@ -18,11 +18,11 @@
 
     exports.push([module.i, "body {\n  margin: 0 auto;\n  max-width: 800px;\n  font-family: arial, Arial, Helvetica, sans-serif;\n}\n\n.card {\n  border: 1px solid #f50808;\n  border-radius: 4px;\n  margin-top: 15px;\n}\n\n.card-body {\n  display: flex;\n  padding: 15px;\n}\n\nh3 {\n  font-size: 32px;\n}\n\nimg {\n  max-height: 200px;\n}\n\n.meta-info {\n  color: grey;\n  margin-top: -28px;\n  font-size: 14px;\n}\n\n.continue-reading {\n  font-style: italic;\n  color: grey;\n}", "", {
       "version": 3,
-      "sources": ["K:\\github\\Blogpost/src\\styles.scss", "styles.scss"],
+      "sources": ["D:\\code\\Blogpost/src\\styles.scss", "styles.scss"],
       "names": [],
       "mappings": "AAAA;EACE,cAAA;EACA,gBAAA;EACA,gDAAA;ACCF;;ADCA;EACE,yBAAA;EACA,kBAAA;EACA,gBAAA;ACEF;;ADCA;EACE,aAAA;EACA,aAAA;ACEF;;ADCA;EACE,eAAA;ACEF;;ADCA;EACE,iBAAA;ACEF;;ADCA;EACE,WAAA;EACA,iBAAA;EACA,eAAA;ACEF;;ADCA;EACE,kBAAA;EACA,WAAA;ACEF",
       "file": "styles.scss",
-      "sourcesContent": ["body {\n  margin: 0 auto;\n  max-width: 800px;\n  font-family: arial, Arial, Helvetica, sans-serif;\n}\n.card {\n  border: 1px solid rgb(245, 8, 8);\n  border-radius: 4px;\n  margin-top: 15px;\n}\n\n.card-body {\n  display: flex;\n  padding: 15px;\n}\n\nh3 {\n  font-size: 32px;\n}\n\nimg {\n  max-height: 200px;\n}\n\n.meta-info {\n  color: grey;\n  margin-top: -28px;\n  font-size: 14px;\n}\n\n.continue-reading {\n  font-style: italic;\n  color: grey;\n}\n", "body {\n  margin: 0 auto;\n  max-width: 800px;\n  font-family: arial, Arial, Helvetica, sans-serif;\n}\n\n.card {\n  border: 1px solid #f50808;\n  border-radius: 4px;\n  margin-top: 15px;\n}\n\n.card-body {\n  display: flex;\n  padding: 15px;\n}\n\nh3 {\n  font-size: 32px;\n}\n\nimg {\n  max-height: 200px;\n}\n\n.meta-info {\n  color: grey;\n  margin-top: -28px;\n  font-size: 14px;\n}\n\n.continue-reading {\n  font-style: italic;\n  color: grey;\n}"]
+      "sourcesContent": ["body {\r\n  margin: 0 auto;\r\n  max-width: 800px;\r\n  font-family: arial, Arial, Helvetica, sans-serif;\r\n}\r\n.card {\r\n  border: 1px solid rgb(245, 8, 8);\r\n  border-radius: 4px;\r\n  margin-top: 15px;\r\n}\r\n\r\n.card-body {\r\n  display: flex;\r\n  padding: 15px;\r\n}\r\n\r\nh3 {\r\n  font-size: 32px;\r\n}\r\n\r\nimg {\r\n  max-height: 200px;\r\n}\r\n\r\n.meta-info {\r\n  color: grey;\r\n  margin-top: -28px;\r\n  font-size: 14px;\r\n}\r\n\r\n.continue-reading {\r\n  font-style: italic;\r\n  color: grey;\r\n}\r\n", "body {\n  margin: 0 auto;\n  max-width: 800px;\n  font-family: arial, Arial, Helvetica, sans-serif;\n}\n\n.card {\n  border: 1px solid #f50808;\n  border-radius: 4px;\n  margin-top: 15px;\n}\n\n.card-body {\n  display: flex;\n  padding: 15px;\n}\n\nh3 {\n  font-size: 32px;\n}\n\nimg {\n  max-height: 200px;\n}\n\n.meta-info {\n  color: grey;\n  margin-top: -28px;\n  font-size: 14px;\n}\n\n.continue-reading {\n  font-style: italic;\n  color: grey;\n}"]
     }]); // Exports
 
     module.exports = exports;
@@ -464,7 +464,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! K:\github\Blogpost\src\styles.scss */
+    /*! D:\code\Blogpost\src\styles.scss */
     "./src/styles.scss");
     /***/
   }

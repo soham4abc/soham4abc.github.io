@@ -623,7 +623,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
     /**
-     * @license Angular v9.1.3
+     * @license Angular v9.1.12
      * (c) 2010-2020 Google LLC. https://angular.io/
      * License: MIT
      */
@@ -719,21 +719,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      * This class should not be used directly by an application developer. Instead, use
      * {\@link Location}.
      *
-     * `PlatformLocation` encapsulates all calls to DOM apis, which allows the Router to be platform
-     * agnostic.
+     * `PlatformLocation` encapsulates all calls to DOM APIs, which allows the Router to be
+     * platform-agnostic.
      * This means that we can have different implementation of `PlatformLocation` for the different
-     * platforms that angular supports. For example, `\@angular/platform-browser` provides an
-     * implementation specific to the browser environment, while `\@angular/platform-webworker` provides
-     * one suitable for use with web workers.
+     * platforms that Angular supports. For example, `\@angular/platform-browser` provides an
+     * implementation specific to the browser environment, while `\@angular/platform-server` provides
+     * one suitable for use with server-side rendering.
      *
      * The `PlatformLocation` class is used directly by all implementations of {\@link LocationStrategy}
-     * when they need to interact with the DOM apis like pushState, popState, etc...
+     * when they need to interact with the DOM APIs like pushState, popState, etc.
      *
      * {\@link LocationStrategy} in turn is used by the {\@link Location} service which is used directly
      * by the {\@link Router} in order to navigate between routes. Since all interactions between {\@link
      * Router} /
-     * {\@link Location} / {\@link LocationStrategy} and DOM apis flow through the `PlatformLocation`
-     * class they are all platform independent.
+     * {\@link Location} / {\@link LocationStrategy} and DOM APIs flow through the `PlatformLocation`
+     * class, they are all platform-agnostic.
      *
      * \@publicApi
      * @abstract
@@ -6417,9 +6417,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /**
      * \@ngModule CommonModule
      *
-     * \@description A structural directive that adds or removes templates (displaying or hiding views)
-     * when the next match expression matches the switch expression.
-     *
+     * \@description
      * The `[ngSwitch]` directive on a container specifies an expression to match against.
      * The expressions to match are provided by `ngSwitchCase` directives on views within the container.
      * - Every view that matches is rendered.
@@ -7931,7 +7929,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var unicodeWordMatch = /(?:[A-Za-z\xAA\xB5\xBA\xC0-\xD6\xD8-\xF6\xF8-\u02C1\u02C6-\u02D1\u02E0-\u02E4\u02EC\u02EE\u0370-\u0374\u0376\u0377\u037A-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0559\u0561-\u0587\u05D0-\u05EA\u05F0-\u05F2\u0620-\u064A\u066E\u066F\u0671-\u06D3\u06D5\u06E5\u06E6\u06EE\u06EF\u06FA-\u06FC\u06FF\u0710\u0712-\u072F\u074D-\u07A5\u07B1\u07CA-\u07EA\u07F4\u07F5\u07FA\u0800-\u0815\u081A\u0824\u0828\u0840-\u0858\u0860-\u086A\u08A0-\u08B4\u08B6-\u08BD\u0904-\u0939\u093D\u0950\u0958-\u0961\u0971-\u0980\u0985-\u098C\u098F\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09CE\u09DC\u09DD\u09DF-\u09E1\u09F0\u09F1\u09FC\u0A05-\u0A0A\u0A0F\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32\u0A33\u0A35\u0A36\u0A38\u0A39\u0A59-\u0A5C\u0A5E\u0A72-\u0A74\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2\u0AB3\u0AB5-\u0AB9\u0ABD\u0AD0\u0AE0\u0AE1\u0AF9\u0B05-\u0B0C\u0B0F\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32\u0B33\u0B35-\u0B39\u0B3D\u0B5C\u0B5D\u0B5F-\u0B61\u0B71\u0B83\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99\u0B9A\u0B9C\u0B9E\u0B9F\u0BA3\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BD0\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60\u0C61\u0C80\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0\u0CE1\u0CF1\u0CF2\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D4E\u0D54-\u0D56\u0D5F-\u0D61\u0D7A-\u0D7F\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0E01-\u0E30\u0E32\u0E33\u0E40-\u0E46\u0E81\u0E82\u0E84\u0E87\u0E88\u0E8A\u0E8D\u0E94-\u0E97\u0E99-\u0E9F\u0EA1-\u0EA3\u0EA5\u0EA7\u0EAA\u0EAB\u0EAD-\u0EB0\u0EB2\u0EB3\u0EBD\u0EC0-\u0EC4\u0EC6\u0EDC-\u0EDF\u0F00\u0F40-\u0F47\u0F49-\u0F6C\u0F88-\u0F8C\u1000-\u102A\u103F\u1050-\u1055\u105A-\u105D\u1061\u1065\u1066\u106E-\u1070\u1075-\u1081\u108E\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FC-\u1248\u124A-\u124D\u1250-\u1256\u1258\u125A-\u125D\u1260-\u1288\u128A-\u128D\u1290-\u12B0\u12B2-\u12B5\u12B8-\u12BE\u12C0\u12C2-\u12C5\u12C8-\u12D6\u12D8-\u1310\u1312-\u1315\u1318-\u135A\u1380-\u138F\u13A0-\u13F5\u13F8-\u13FD\u1401-\u166C\u166F-\u167F\u1681-\u169A\u16A0-\u16EA\u16F1-\u16F8\u1700-\u170C\u170E-\u1711\u1720-\u1731\u1740-\u1751\u1760-\u176C\u176E-\u1770\u1780-\u17B3\u17D7\u17DC\u1820-\u1877\u1880-\u1884\u1887-\u18A8\u18AA\u18B0-\u18F5\u1900-\u191E\u1950-\u196D\u1970-\u1974\u1980-\u19AB\u19B0-\u19C9\u1A00-\u1A16\u1A20-\u1A54\u1AA7\u1B05-\u1B33\u1B45-\u1B4B\u1B83-\u1BA0\u1BAE\u1BAF\u1BBA-\u1BE5\u1C00-\u1C23\u1C4D-\u1C4F\u1C5A-\u1C7D\u1C80-\u1C88\u1CE9-\u1CEC\u1CEE-\u1CF1\u1CF5\u1CF6\u1D00-\u1DBF\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1FB4\u1FB6-\u1FBC\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCC\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFC\u2071\u207F\u2090-\u209C\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\u2D30-\u2D67\u2D6F\u2D80-\u2D96\u2DA0-\u2DA6\u2DA8-\u2DAE\u2DB0-\u2DB6\u2DB8-\u2DBE\u2DC0-\u2DC6\u2DC8-\u2DCE\u2DD0-\u2DD6\u2DD8-\u2DDE\u2E2F\u3005\u3006\u3031-\u3035\u303B\u303C\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FC-\u30FF\u3105-\u312E\u3131-\u318E\u31A0-\u31BA\u31F0-\u31FF\u3400-\u4DB5\u4E00-\u9FEA\uA000-\uA48C\uA4D0-\uA4FD\uA500-\uA60C\uA610-\uA61F\uA62A\uA62B\uA640-\uA66E\uA67F-\uA69D\uA6A0-\uA6E5\uA717-\uA71F\uA722-\uA788\uA78B-\uA7AE\uA7B0-\uA7B7\uA7F7-\uA801\uA803-\uA805\uA807-\uA80A\uA80C-\uA822\uA840-\uA873\uA882-\uA8B3\uA8F2-\uA8F7\uA8FB\uA8FD\uA90A-\uA925\uA930-\uA946\uA960-\uA97C\uA984-\uA9B2\uA9CF\uA9E0-\uA9E4\uA9E6-\uA9EF\uA9FA-\uA9FE\uAA00-\uAA28\uAA40-\uAA42\uAA44-\uAA4B\uAA60-\uAA76\uAA7A\uAA7E-\uAAAF\uAAB1\uAAB5\uAAB6\uAAB9-\uAABD\uAAC0\uAAC2\uAADB-\uAADD\uAAE0-\uAAEA\uAAF2-\uAAF4\uAB01-\uAB06\uAB09-\uAB0E\uAB11-\uAB16\uAB20-\uAB26\uAB28-\uAB2E\uAB30-\uAB5A\uAB5C-\uAB65\uAB70-\uABE2\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFB00-\uFB06\uFB13-\uFB17\uFB1D\uFB1F-\uFB28\uFB2A-\uFB36\uFB38-\uFB3C\uFB3E\uFB40\uFB41\uFB43\uFB44\uFB46-\uFBB1\uFBD3-\uFD3D\uFD50-\uFD8F\uFD92-\uFDC7\uFDF0-\uFDFB\uFE70-\uFE74\uFE76-\uFEFC\uFF21-\uFF3A\uFF41-\uFF5A\uFF66-\uFFBE\uFFC2-\uFFC7\uFFCA-\uFFCF\uFFD2-\uFFD7\uFFDA-\uFFDC]|\uD800[\uDC00-\uDC0B\uDC0D-\uDC26\uDC28-\uDC3A\uDC3C\uDC3D\uDC3F-\uDC4D\uDC50-\uDC5D\uDC80-\uDCFA\uDE80-\uDE9C\uDEA0-\uDED0\uDF00-\uDF1F\uDF2D-\uDF40\uDF42-\uDF49\uDF50-\uDF75\uDF80-\uDF9D\uDFA0-\uDFC3\uDFC8-\uDFCF]|\uD801[\uDC00-\uDC9D\uDCB0-\uDCD3\uDCD8-\uDCFB\uDD00-\uDD27\uDD30-\uDD63\uDE00-\uDF36\uDF40-\uDF55\uDF60-\uDF67]|\uD802[\uDC00-\uDC05\uDC08\uDC0A-\uDC35\uDC37\uDC38\uDC3C\uDC3F-\uDC55\uDC60-\uDC76\uDC80-\uDC9E\uDCE0-\uDCF2\uDCF4\uDCF5\uDD00-\uDD15\uDD20-\uDD39\uDD80-\uDDB7\uDDBE\uDDBF\uDE00\uDE10-\uDE13\uDE15-\uDE17\uDE19-\uDE33\uDE60-\uDE7C\uDE80-\uDE9C\uDEC0-\uDEC7\uDEC9-\uDEE4\uDF00-\uDF35\uDF40-\uDF55\uDF60-\uDF72\uDF80-\uDF91]|\uD803[\uDC00-\uDC48\uDC80-\uDCB2\uDCC0-\uDCF2]|\uD804[\uDC03-\uDC37\uDC83-\uDCAF\uDCD0-\uDCE8\uDD03-\uDD26\uDD50-\uDD72\uDD76\uDD83-\uDDB2\uDDC1-\uDDC4\uDDDA\uDDDC\uDE00-\uDE11\uDE13-\uDE2B\uDE80-\uDE86\uDE88\uDE8A-\uDE8D\uDE8F-\uDE9D\uDE9F-\uDEA8\uDEB0-\uDEDE\uDF05-\uDF0C\uDF0F\uDF10\uDF13-\uDF28\uDF2A-\uDF30\uDF32\uDF33\uDF35-\uDF39\uDF3D\uDF50\uDF5D-\uDF61]|\uD805[\uDC00-\uDC34\uDC47-\uDC4A\uDC80-\uDCAF\uDCC4\uDCC5\uDCC7\uDD80-\uDDAE\uDDD8-\uDDDB\uDE00-\uDE2F\uDE44\uDE80-\uDEAA\uDF00-\uDF19]|\uD806[\uDCA0-\uDCDF\uDCFF\uDE00\uDE0B-\uDE32\uDE3A\uDE50\uDE5C-\uDE83\uDE86-\uDE89\uDEC0-\uDEF8]|\uD807[\uDC00-\uDC08\uDC0A-\uDC2E\uDC40\uDC72-\uDC8F\uDD00-\uDD06\uDD08\uDD09\uDD0B-\uDD30\uDD46]|\uD808[\uDC00-\uDF99]|\uD809[\uDC80-\uDD43]|[\uD80C\uD81C-\uD820\uD840-\uD868\uD86A-\uD86C\uD86F-\uD872\uD874-\uD879][\uDC00-\uDFFF]|\uD80D[\uDC00-\uDC2E]|\uD811[\uDC00-\uDE46]|\uD81A[\uDC00-\uDE38\uDE40-\uDE5E\uDED0-\uDEED\uDF00-\uDF2F\uDF40-\uDF43\uDF63-\uDF77\uDF7D-\uDF8F]|\uD81B[\uDF00-\uDF44\uDF50\uDF93-\uDF9F\uDFE0\uDFE1]|\uD821[\uDC00-\uDFEC]|\uD822[\uDC00-\uDEF2]|\uD82C[\uDC00-\uDD1E\uDD70-\uDEFB]|\uD82F[\uDC00-\uDC6A\uDC70-\uDC7C\uDC80-\uDC88\uDC90-\uDC99]|\uD835[\uDC00-\uDC54\uDC56-\uDC9C\uDC9E\uDC9F\uDCA2\uDCA5\uDCA6\uDCA9-\uDCAC\uDCAE-\uDCB9\uDCBB\uDCBD-\uDCC3\uDCC5-\uDD05\uDD07-\uDD0A\uDD0D-\uDD14\uDD16-\uDD1C\uDD1E-\uDD39\uDD3B-\uDD3E\uDD40-\uDD44\uDD46\uDD4A-\uDD50\uDD52-\uDEA5\uDEA8-\uDEC0\uDEC2-\uDEDA\uDEDC-\uDEFA\uDEFC-\uDF14\uDF16-\uDF34\uDF36-\uDF4E\uDF50-\uDF6E\uDF70-\uDF88\uDF8A-\uDFA8\uDFAA-\uDFC2\uDFC4-\uDFCB]|\uD83A[\uDC00-\uDCC4\uDD00-\uDD43]|\uD83B[\uDE00-\uDE03\uDE05-\uDE1F\uDE21\uDE22\uDE24\uDE27\uDE29-\uDE32\uDE34-\uDE37\uDE39\uDE3B\uDE42\uDE47\uDE49\uDE4B\uDE4D-\uDE4F\uDE51\uDE52\uDE54\uDE57\uDE59\uDE5B\uDE5D\uDE5F\uDE61\uDE62\uDE64\uDE67-\uDE6A\uDE6C-\uDE72\uDE74-\uDE77\uDE79-\uDE7C\uDE7E\uDE80-\uDE89\uDE8B-\uDE9B\uDEA1-\uDEA3\uDEA5-\uDEA9\uDEAB-\uDEBB]|\uD869[\uDC00-\uDED6\uDF00-\uDFFF]|\uD86D[\uDC00-\uDF34\uDF40-\uDFFF]|\uD86E[\uDC00-\uDC1D\uDC20-\uDFFF]|\uD873[\uDC00-\uDEA1\uDEB0-\uDFFF]|\uD87A[\uDC00-\uDFE0]|\uD87E[\uDC00-\uDE1D])\S*/g;
     /**
      * Transforms text to title case.
-     * Capitalizes the first letter of each word, and transforms the
+     * Capitalizes the first letter of each word and transforms the
      * rest of the word to lower case.
      * Words are delimited by any whitespace character, such as a space, tab, or line-feed character.
      *
@@ -9439,7 +9437,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      */
 
 
-    var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('9.1.3');
+    var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('9.1.12');
     /**
      * @fileoverview added by tsickle
      * Generated from: packages/common/src/viewport_scroller.ts
@@ -9963,7 +9961,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /**
-     * @license Angular v9.1.3
+     * @license Angular v9.1.12
      * (c) 2010-2020 Google LLC. https://angular.io/
      * License: MIT
      */
@@ -13796,7 +13794,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     !*** ./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js ***!
     \******************************************************************/
 
-  /*! exports provided: ANALYZE_FOR_ENTRY_COMPONENTS, APP_BOOTSTRAP_LISTENER, APP_ID, APP_INITIALIZER, ApplicationInitStatus, ApplicationModule, ApplicationRef, Attribute, COMPILER_OPTIONS, CUSTOM_ELEMENTS_SCHEMA, ChangeDetectionStrategy, ChangeDetectorRef, Compiler, CompilerFactory, Component, ComponentFactory, ComponentFactoryResolver, ComponentRef, ContentChild, ContentChildren, DEFAULT_CURRENCY_CODE, DebugElement, DebugEventListener, DebugNode, DefaultIterableDiffer, Directive, ElementRef, EmbeddedViewRef, ErrorHandler, EventEmitter, Host, HostBinding, HostListener, INJECTOR, Inject, InjectFlags, Injectable, InjectionToken, Injector, Input, IterableDiffers, KeyValueDiffers, LOCALE_ID, MissingTranslationStrategy, ModuleWithComponentFactories, NO_ERRORS_SCHEMA, NgModule, NgModuleFactory, NgModuleFactoryLoader, NgModuleRef, NgProbeToken, NgZone, Optional, Output, PACKAGE_ROOT_URL, PLATFORM_ID, PLATFORM_INITIALIZER, Pipe, PlatformRef, Query, QueryList, ReflectiveInjector, ReflectiveKey, Renderer2, RendererFactory2, RendererStyleFlags2, ResolvedReflectiveFactory, Sanitizer, SecurityContext, Self, SimpleChange, SkipSelf, SystemJsNgModuleLoader, SystemJsNgModuleLoaderConfig, TRANSLATIONS, TRANSLATIONS_FORMAT, TemplateRef, Testability, TestabilityRegistry, Type, VERSION, Version, ViewChild, ViewChildren, ViewContainerRef, ViewEncapsulation, ViewRef, WrappedValue, asNativeElements, assertPlatform, createPlatform, createPlatformFactory, defineInjectable, destroyPlatform, enableProdMode, forwardRef, getDebugNode, getModuleFactory, getPlatform, inject, isDevMode, platformCore, resolveForwardRef, setTestabilityGetter, ɵALLOW_MULTIPLE_PLATFORMS, ɵAPP_ID_RANDOM_PROVIDER, ɵChangeDetectorStatus, ɵCodegenComponentFactoryResolver, ɵCompiler_compileModuleAndAllComponentsAsync__POST_R3__, ɵCompiler_compileModuleAndAllComponentsSync__POST_R3__, ɵCompiler_compileModuleAsync__POST_R3__, ɵCompiler_compileModuleSync__POST_R3__, ɵComponentFactory, ɵConsole, ɵDEFAULT_LOCALE_ID, ɵEMPTY_ARRAY, ɵEMPTY_MAP, ɵINJECTOR_IMPL__POST_R3__, ɵINJECTOR_SCOPE, ɵLifecycleHooksFeature, ɵLocaleDataIndex, ɵNG_COMP_DEF, ɵNG_DIR_DEF, ɵNG_ELEMENT_ID, ɵNG_INJ_DEF, ɵNG_MOD_DEF, ɵNG_PIPE_DEF, ɵNG_PROV_DEF, ɵNOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR, ɵNO_CHANGE, ɵNgModuleFactory, ɵNoopNgZone, ɵReflectionCapabilities, ɵRender3ComponentFactory, ɵRender3ComponentRef, ɵRender3NgModuleRef, ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__, ɵSWITCH_COMPILE_COMPONENT__POST_R3__, ɵSWITCH_COMPILE_DIRECTIVE__POST_R3__, ɵSWITCH_COMPILE_INJECTABLE__POST_R3__, ɵSWITCH_COMPILE_NGMODULE__POST_R3__, ɵSWITCH_COMPILE_PIPE__POST_R3__, ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__, ɵSWITCH_IVY_ENABLED__POST_R3__, ɵSWITCH_RENDERER2_FACTORY__POST_R3__, ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__, ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__, ɵ_sanitizeHtml, ɵ_sanitizeStyle, ɵ_sanitizeUrl, ɵallowSanitizationBypassAndThrow, ɵand, ɵangular_packages_core_core_a, ɵangular_packages_core_core_b, ɵangular_packages_core_core_ba, ɵangular_packages_core_core_bb, ɵangular_packages_core_core_bc, ɵangular_packages_core_core_bd, ɵangular_packages_core_core_bf, ɵangular_packages_core_core_bg, ɵangular_packages_core_core_bh, ɵangular_packages_core_core_bi, ɵangular_packages_core_core_bj, ɵangular_packages_core_core_bk, ɵangular_packages_core_core_bl, ɵangular_packages_core_core_bm, ɵangular_packages_core_core_bn, ɵangular_packages_core_core_bp, ɵangular_packages_core_core_bq, ɵangular_packages_core_core_c, ɵangular_packages_core_core_d, ɵangular_packages_core_core_e, ɵangular_packages_core_core_f, ɵangular_packages_core_core_g, ɵangular_packages_core_core_h, ɵangular_packages_core_core_i, ɵangular_packages_core_core_j, ɵangular_packages_core_core_k, ɵangular_packages_core_core_l, ɵangular_packages_core_core_m, ɵangular_packages_core_core_n, ɵangular_packages_core_core_o, ɵangular_packages_core_core_p, ɵangular_packages_core_core_q, ɵangular_packages_core_core_r, ɵangular_packages_core_core_s, ɵangular_packages_core_core_t, ɵangular_packages_core_core_u, ɵangular_packages_core_core_v, ɵangular_packages_core_core_w, ɵangular_packages_core_core_x, ɵangular_packages_core_core_y, ɵangular_packages_core_core_z, ɵbypassSanitizationTrustHtml, ɵbypassSanitizationTrustResourceUrl, ɵbypassSanitizationTrustScript, ɵbypassSanitizationTrustStyle, ɵbypassSanitizationTrustUrl, ɵccf, ɵclearOverrides, ɵclearResolutionOfComponentResourcesQueue, ɵcmf, ɵcompileComponent, ɵcompileDirective, ɵcompileNgModule, ɵcompileNgModuleDefs, ɵcompileNgModuleFactory__POST_R3__, ɵcompilePipe, ɵcreateInjector, ɵcrt, ɵdefaultIterableDiffers, ɵdefaultKeyValueDiffers, ɵdetectChanges, ɵdevModeEqual, ɵdid, ɵeld, ɵfindLocaleData, ɵflushModuleScopingQueueAsMuchAsPossible, ɵgetComponentViewDefinitionFactory, ɵgetDebugNodeR2, ɵgetDebugNode__POST_R3__, ɵgetDirectives, ɵgetHostElement, ɵgetInjectableDef, ɵgetLContext, ɵgetLocaleCurrencyCode, ɵgetLocalePluralCase, ɵgetModuleFactory__POST_R3__, ɵgetSanitizationBypassType, ɵglobal, ɵinitServicesIfNeeded, ɵinlineInterpolate, ɵinterpolate, ɵisBoundToModule__POST_R3__, ɵisDefaultChangeDetectionStrategy, ɵisListLikeIterable, ɵisObservable, ɵisPromise, ɵivyEnabled, ɵlooseIdentical, ɵmakeDecorator, ɵmarkDirty, ɵmod, ɵmpd, ɵncd, ɵnov, ɵoverrideComponentView, ɵoverrideProvider, ɵpad, ɵpatchComponentDefWithScope, ɵpid, ɵpod, ɵppd, ɵprd, ɵpublishDefaultGlobalUtils, ɵpublishGlobalUtil, ɵqud, ɵregisterLocaleData, ɵregisterModuleFactory, ɵregisterNgModuleType, ɵrenderComponent, ɵresetCompiledComponents, ɵresetJitOptions, ɵresolveComponentResources, ɵsetClassMetadata, ɵsetCurrentInjector, ɵsetDocument, ɵsetLocaleId, ɵstore, ɵstringify, ɵted, ɵtransitiveScopesFor, ɵunregisterLocaleData, ɵunv, ɵunwrapSafeValue, ɵvid, ɵwhenRendered, ɵɵCopyDefinitionFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature, ɵɵProvidersFeature, ɵɵadvance, ɵɵattribute, ɵɵattributeInterpolate1, ɵɵattributeInterpolate2, ɵɵattributeInterpolate3, ɵɵattributeInterpolate4, ɵɵattributeInterpolate5, ɵɵattributeInterpolate6, ɵɵattributeInterpolate7, ɵɵattributeInterpolate8, ɵɵattributeInterpolateV, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵclassMapInterpolate2, ɵɵclassMapInterpolate3, ɵɵclassMapInterpolate4, ɵɵclassMapInterpolate5, ɵɵclassMapInterpolate6, ɵɵclassMapInterpolate7, ɵɵclassMapInterpolate8, ɵɵclassMapInterpolateV, ɵɵclassProp, ɵɵcomponentHostSyntheticListener, ɵɵcontainer, ɵɵcontainerRefreshEnd, ɵɵcontainerRefreshStart, ɵɵcontentQuery, ɵɵdefaultStyleSanitizer, ɵɵdefineComponent, ɵɵdefineDirective, ɵɵdefineInjectable, ɵɵdefineInjector, ɵɵdefineNgModule, ɵɵdefinePipe, ɵɵdirectiveInject, ɵɵdisableBindings, ɵɵelement, ɵɵelementContainer, ɵɵelementContainerEnd, ɵɵelementContainerStart, ɵɵelementEnd, ɵɵelementStart, ɵɵembeddedViewEnd, ɵɵembeddedViewStart, ɵɵenableBindings, ɵɵgetCurrentView, ɵɵgetFactoryOf, ɵɵgetInheritedFactory, ɵɵhostProperty, ɵɵi18n, ɵɵi18nApply, ɵɵi18nAttributes, ɵɵi18nEnd, ɵɵi18nExp, ɵɵi18nPostprocess, ɵɵi18nStart, ɵɵinject, ɵɵinjectAttribute, ɵɵinjectPipeChangeDetectorRef, ɵɵinvalidFactory, ɵɵinvalidFactoryDep, ɵɵlistener, ɵɵloadQuery, ɵɵnamespaceHTML, ɵɵnamespaceMathML, ɵɵnamespaceSVG, ɵɵnextContext, ɵɵpipe, ɵɵpipeBind1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵpipeBind4, ɵɵpipeBindV, ɵɵprojection, ɵɵprojectionDef, ɵɵproperty, ɵɵpropertyInterpolate, ɵɵpropertyInterpolate1, ɵɵpropertyInterpolate2, ɵɵpropertyInterpolate3, ɵɵpropertyInterpolate4, ɵɵpropertyInterpolate5, ɵɵpropertyInterpolate6, ɵɵpropertyInterpolate7, ɵɵpropertyInterpolate8, ɵɵpropertyInterpolateV, ɵɵpureFunction0, ɵɵpureFunction1, ɵɵpureFunction2, ɵɵpureFunction3, ɵɵpureFunction4, ɵɵpureFunction5, ɵɵpureFunction6, ɵɵpureFunction7, ɵɵpureFunction8, ɵɵpureFunctionV, ɵɵqueryRefresh, ɵɵreference, ɵɵresolveBody, ɵɵresolveDocument, ɵɵresolveWindow, ɵɵrestoreView, ɵɵsanitizeHtml, ɵɵsanitizeResourceUrl, ɵɵsanitizeScript, ɵɵsanitizeStyle, ɵɵsanitizeUrl, ɵɵsanitizeUrlOrResourceUrl, ɵɵselect, ɵɵsetComponentScope, ɵɵsetNgModuleScope, ɵɵstaticContentQuery, ɵɵstaticViewQuery, ɵɵstyleMap, ɵɵstyleMapInterpolate1, ɵɵstyleMapInterpolate2, ɵɵstyleMapInterpolate3, ɵɵstyleMapInterpolate4, ɵɵstyleMapInterpolate5, ɵɵstyleMapInterpolate6, ɵɵstyleMapInterpolate7, ɵɵstyleMapInterpolate8, ɵɵstyleMapInterpolateV, ɵɵstyleProp, ɵɵstylePropInterpolate1, ɵɵstylePropInterpolate2, ɵɵstylePropInterpolate3, ɵɵstylePropInterpolate4, ɵɵstylePropInterpolate5, ɵɵstylePropInterpolate6, ɵɵstylePropInterpolate7, ɵɵstylePropInterpolate8, ɵɵstylePropInterpolateV, ɵɵstyleSanitizer, ɵɵtemplate, ɵɵtemplateRefExtractor, ɵɵtext, ɵɵtextInterpolate, ɵɵtextInterpolate1, ɵɵtextInterpolate2, ɵɵtextInterpolate3, ɵɵtextInterpolate4, ɵɵtextInterpolate5, ɵɵtextInterpolate6, ɵɵtextInterpolate7, ɵɵtextInterpolate8, ɵɵtextInterpolateV, ɵɵupdateSyntheticHostBinding, ɵɵviewQuery */
+  /*! exports provided: ANALYZE_FOR_ENTRY_COMPONENTS, APP_BOOTSTRAP_LISTENER, APP_ID, APP_INITIALIZER, ApplicationInitStatus, ApplicationModule, ApplicationRef, Attribute, COMPILER_OPTIONS, CUSTOM_ELEMENTS_SCHEMA, ChangeDetectionStrategy, ChangeDetectorRef, Compiler, CompilerFactory, Component, ComponentFactory, ComponentFactoryResolver, ComponentRef, ContentChild, ContentChildren, DEFAULT_CURRENCY_CODE, DebugElement, DebugEventListener, DebugNode, DefaultIterableDiffer, Directive, ElementRef, EmbeddedViewRef, ErrorHandler, EventEmitter, Host, HostBinding, HostListener, INJECTOR, Inject, InjectFlags, Injectable, InjectionToken, Injector, Input, IterableDiffers, KeyValueDiffers, LOCALE_ID, MissingTranslationStrategy, ModuleWithComponentFactories, NO_ERRORS_SCHEMA, NgModule, NgModuleFactory, NgModuleFactoryLoader, NgModuleRef, NgProbeToken, NgZone, Optional, Output, PACKAGE_ROOT_URL, PLATFORM_ID, PLATFORM_INITIALIZER, Pipe, PlatformRef, Query, QueryList, ReflectiveInjector, ReflectiveKey, Renderer2, RendererFactory2, RendererStyleFlags2, ResolvedReflectiveFactory, Sanitizer, SecurityContext, Self, SimpleChange, SkipSelf, SystemJsNgModuleLoader, SystemJsNgModuleLoaderConfig, TRANSLATIONS, TRANSLATIONS_FORMAT, TemplateRef, Testability, TestabilityRegistry, Type, VERSION, Version, ViewChild, ViewChildren, ViewContainerRef, ViewEncapsulation, ViewRef, WrappedValue, asNativeElements, assertPlatform, createPlatform, createPlatformFactory, defineInjectable, destroyPlatform, enableProdMode, forwardRef, getDebugNode, getModuleFactory, getPlatform, inject, isDevMode, platformCore, resolveForwardRef, setTestabilityGetter, ɵALLOW_MULTIPLE_PLATFORMS, ɵAPP_ID_RANDOM_PROVIDER, ɵChangeDetectorStatus, ɵCodegenComponentFactoryResolver, ɵCompiler_compileModuleAndAllComponentsAsync__POST_R3__, ɵCompiler_compileModuleAndAllComponentsSync__POST_R3__, ɵCompiler_compileModuleAsync__POST_R3__, ɵCompiler_compileModuleSync__POST_R3__, ɵComponentFactory, ɵConsole, ɵDEFAULT_LOCALE_ID, ɵEMPTY_ARRAY, ɵEMPTY_MAP, ɵINJECTOR_IMPL__POST_R3__, ɵINJECTOR_SCOPE, ɵLifecycleHooksFeature, ɵLocaleDataIndex, ɵNG_COMP_DEF, ɵNG_DIR_DEF, ɵNG_ELEMENT_ID, ɵNG_INJ_DEF, ɵNG_MOD_DEF, ɵNG_PIPE_DEF, ɵNG_PROV_DEF, ɵNOT_FOUND_CHECK_ONLY_ELEMENT_INJECTOR, ɵNO_CHANGE, ɵNgModuleFactory, ɵNoopNgZone, ɵReflectionCapabilities, ɵRender3ComponentFactory, ɵRender3ComponentRef, ɵRender3NgModuleRef, ɵSWITCH_CHANGE_DETECTOR_REF_FACTORY__POST_R3__, ɵSWITCH_COMPILE_COMPONENT__POST_R3__, ɵSWITCH_COMPILE_DIRECTIVE__POST_R3__, ɵSWITCH_COMPILE_INJECTABLE__POST_R3__, ɵSWITCH_COMPILE_NGMODULE__POST_R3__, ɵSWITCH_COMPILE_PIPE__POST_R3__, ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__, ɵSWITCH_IVY_ENABLED__POST_R3__, ɵSWITCH_RENDERER2_FACTORY__POST_R3__, ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__, ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__, ɵ_sanitizeHtml, ɵ_sanitizeStyle, ɵ_sanitizeUrl, ɵallowSanitizationBypassAndThrow, ɵand, ɵangular_packages_core_core_a, ɵangular_packages_core_core_b, ɵangular_packages_core_core_ba, ɵangular_packages_core_core_bb, ɵangular_packages_core_core_bc, ɵangular_packages_core_core_bd, ɵangular_packages_core_core_bf, ɵangular_packages_core_core_bg, ɵangular_packages_core_core_bh, ɵangular_packages_core_core_bi, ɵangular_packages_core_core_bj, ɵangular_packages_core_core_bk, ɵangular_packages_core_core_bl, ɵangular_packages_core_core_bm, ɵangular_packages_core_core_bn, ɵangular_packages_core_core_bp, ɵangular_packages_core_core_bq, ɵangular_packages_core_core_c, ɵangular_packages_core_core_d, ɵangular_packages_core_core_e, ɵangular_packages_core_core_f, ɵangular_packages_core_core_g, ɵangular_packages_core_core_h, ɵangular_packages_core_core_i, ɵangular_packages_core_core_j, ɵangular_packages_core_core_k, ɵangular_packages_core_core_l, ɵangular_packages_core_core_m, ɵangular_packages_core_core_n, ɵangular_packages_core_core_o, ɵangular_packages_core_core_p, ɵangular_packages_core_core_q, ɵangular_packages_core_core_r, ɵangular_packages_core_core_s, ɵangular_packages_core_core_t, ɵangular_packages_core_core_u, ɵangular_packages_core_core_v, ɵangular_packages_core_core_w, ɵangular_packages_core_core_x, ɵangular_packages_core_core_y, ɵangular_packages_core_core_z, ɵbypassSanitizationTrustHtml, ɵbypassSanitizationTrustResourceUrl, ɵbypassSanitizationTrustScript, ɵbypassSanitizationTrustStyle, ɵbypassSanitizationTrustUrl, ɵccf, ɵclearOverrides, ɵclearResolutionOfComponentResourcesQueue, ɵcmf, ɵcompileComponent, ɵcompileDirective, ɵcompileNgModule, ɵcompileNgModuleDefs, ɵcompileNgModuleFactory__POST_R3__, ɵcompilePipe, ɵcreateInjector, ɵcrt, ɵdefaultIterableDiffers, ɵdefaultKeyValueDiffers, ɵdetectChanges, ɵdevModeEqual, ɵdid, ɵeld, ɵfindLocaleData, ɵflushModuleScopingQueueAsMuchAsPossible, ɵgetComponentViewDefinitionFactory, ɵgetDebugNodeR2, ɵgetDebugNode__POST_R3__, ɵgetDirectives, ɵgetHostElement, ɵgetInjectableDef, ɵgetLContext, ɵgetLocaleCurrencyCode, ɵgetLocalePluralCase, ɵgetModuleFactory__POST_R3__, ɵgetSanitizationBypassType, ɵglobal, ɵinitServicesIfNeeded, ɵinlineInterpolate, ɵinterpolate, ɵisBoundToModule__POST_R3__, ɵisDefaultChangeDetectionStrategy, ɵisListLikeIterable, ɵisObservable, ɵisPromise, ɵivyEnabled, ɵlooseIdentical, ɵmakeDecorator, ɵmarkDirty, ɵmod, ɵmpd, ɵncd, ɵnov, ɵoverrideComponentView, ɵoverrideProvider, ɵpad, ɵpatchComponentDefWithScope, ɵpid, ɵpod, ɵppd, ɵprd, ɵpublishDefaultGlobalUtils, ɵpublishGlobalUtil, ɵqud, ɵregisterLocaleData, ɵregisterModuleFactory, ɵregisterNgModuleType, ɵrenderComponent, ɵresetCompiledComponents, ɵresetJitOptions, ɵresolveComponentResources, ɵsetClassMetadata, ɵsetCurrentInjector, ɵsetDocument, ɵsetLocaleId, ɵstore, ɵstringify, ɵted, ɵtransitiveScopesFor, ɵunregisterLocaleData, ɵunv, ɵunwrapSafeValue, ɵvid, ɵwhenRendered, ɵɵCopyDefinitionFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature, ɵɵProvidersFeature, ɵɵadvance, ɵɵattribute, ɵɵattributeInterpolate1, ɵɵattributeInterpolate2, ɵɵattributeInterpolate3, ɵɵattributeInterpolate4, ɵɵattributeInterpolate5, ɵɵattributeInterpolate6, ɵɵattributeInterpolate7, ɵɵattributeInterpolate8, ɵɵattributeInterpolateV, ɵɵclassMap, ɵɵclassMapInterpolate1, ɵɵclassMapInterpolate2, ɵɵclassMapInterpolate3, ɵɵclassMapInterpolate4, ɵɵclassMapInterpolate5, ɵɵclassMapInterpolate6, ɵɵclassMapInterpolate7, ɵɵclassMapInterpolate8, ɵɵclassMapInterpolateV, ɵɵclassProp, ɵɵcomponentHostSyntheticListener, ɵɵcontentQuery, ɵɵdefaultStyleSanitizer, ɵɵdefineComponent, ɵɵdefineDirective, ɵɵdefineInjectable, ɵɵdefineInjector, ɵɵdefineNgModule, ɵɵdefinePipe, ɵɵdirectiveInject, ɵɵdisableBindings, ɵɵelement, ɵɵelementContainer, ɵɵelementContainerEnd, ɵɵelementContainerStart, ɵɵelementEnd, ɵɵelementStart, ɵɵenableBindings, ɵɵgetCurrentView, ɵɵgetFactoryOf, ɵɵgetInheritedFactory, ɵɵhostProperty, ɵɵi18n, ɵɵi18nApply, ɵɵi18nAttributes, ɵɵi18nEnd, ɵɵi18nExp, ɵɵi18nPostprocess, ɵɵi18nStart, ɵɵinject, ɵɵinjectAttribute, ɵɵinjectPipeChangeDetectorRef, ɵɵinvalidFactory, ɵɵinvalidFactoryDep, ɵɵlistener, ɵɵloadQuery, ɵɵnamespaceHTML, ɵɵnamespaceMathML, ɵɵnamespaceSVG, ɵɵnextContext, ɵɵpipe, ɵɵpipeBind1, ɵɵpipeBind2, ɵɵpipeBind3, ɵɵpipeBind4, ɵɵpipeBindV, ɵɵprojection, ɵɵprojectionDef, ɵɵproperty, ɵɵpropertyInterpolate, ɵɵpropertyInterpolate1, ɵɵpropertyInterpolate2, ɵɵpropertyInterpolate3, ɵɵpropertyInterpolate4, ɵɵpropertyInterpolate5, ɵɵpropertyInterpolate6, ɵɵpropertyInterpolate7, ɵɵpropertyInterpolate8, ɵɵpropertyInterpolateV, ɵɵpureFunction0, ɵɵpureFunction1, ɵɵpureFunction2, ɵɵpureFunction3, ɵɵpureFunction4, ɵɵpureFunction5, ɵɵpureFunction6, ɵɵpureFunction7, ɵɵpureFunction8, ɵɵpureFunctionV, ɵɵqueryRefresh, ɵɵreference, ɵɵresolveBody, ɵɵresolveDocument, ɵɵresolveWindow, ɵɵrestoreView, ɵɵsanitizeHtml, ɵɵsanitizeResourceUrl, ɵɵsanitizeScript, ɵɵsanitizeStyle, ɵɵsanitizeUrl, ɵɵsanitizeUrlOrResourceUrl, ɵɵselect, ɵɵsetComponentScope, ɵɵsetNgModuleScope, ɵɵstaticContentQuery, ɵɵstaticViewQuery, ɵɵstyleMap, ɵɵstyleMapInterpolate1, ɵɵstyleMapInterpolate2, ɵɵstyleMapInterpolate3, ɵɵstyleMapInterpolate4, ɵɵstyleMapInterpolate5, ɵɵstyleMapInterpolate6, ɵɵstyleMapInterpolate7, ɵɵstyleMapInterpolate8, ɵɵstyleMapInterpolateV, ɵɵstyleProp, ɵɵstylePropInterpolate1, ɵɵstylePropInterpolate2, ɵɵstylePropInterpolate3, ɵɵstylePropInterpolate4, ɵɵstylePropInterpolate5, ɵɵstylePropInterpolate6, ɵɵstylePropInterpolate7, ɵɵstylePropInterpolate8, ɵɵstylePropInterpolateV, ɵɵstyleSanitizer, ɵɵtemplate, ɵɵtemplateRefExtractor, ɵɵtext, ɵɵtextInterpolate, ɵɵtextInterpolate1, ɵɵtextInterpolate2, ɵɵtextInterpolate3, ɵɵtextInterpolate4, ɵɵtextInterpolate5, ɵɵtextInterpolate6, ɵɵtextInterpolate7, ɵɵtextInterpolate8, ɵɵtextInterpolateV, ɵɵupdateSyntheticHostBinding, ɵɵviewQuery */
 
   /***/
   function node_modulesAngularCore__ivy_ngcc__Fesm2015CoreJs(module, __webpack_exports__, __webpack_require__) {
@@ -15630,24 +15628,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "ɵɵcontainer", function () {
-      return ɵɵcontainer;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "ɵɵcontainerRefreshEnd", function () {
-      return ɵɵcontainerRefreshEnd;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "ɵɵcontainerRefreshStart", function () {
-      return ɵɵcontainerRefreshStart;
-    });
-    /* harmony export (binding) */
-
-
     __webpack_require__.d(__webpack_exports__, "ɵɵcontentQuery", function () {
       return ɵɵcontentQuery;
     });
@@ -15740,18 +15720,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     __webpack_require__.d(__webpack_exports__, "ɵɵelementStart", function () {
       return ɵɵelementStart;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "ɵɵembeddedViewEnd", function () {
-      return ɵɵembeddedViewEnd;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "ɵɵembeddedViewStart", function () {
-      return ɵɵembeddedViewStart;
     });
     /* harmony export (binding) */
 
@@ -16396,7 +16364,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! rxjs/operators */
     "./node_modules/rxjs/_esm2015/operators/index.js");
     /**
-     * @license Angular v9.1.3
+     * @license Angular v9.1.12
      * (c) 2010-2020 Google LLC. https://angular.io/
      * License: MIT
      */
@@ -19066,7 +19034,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var NEXT = 4;
     /** @type {?} */
 
-    var QUERIES = 5;
+    var TRANSPLANTED_VIEWS_TO_REFRESH = 5;
     /** @type {?} */
 
     var T_HOST = 6;
@@ -19106,12 +19074,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /** @type {?} */
 
     var PREORDER_HOOK_FLAGS = 18;
+    /** @type {?} */
+
+    var QUERIES = 19;
     /**
      * Size of LView's header. Necessary to adjust for it when setting slots.
      * @type {?}
      */
 
-    var HEADER_OFFSET = 19;
+    var HEADER_OFFSET = 20;
     /**
      * @record
      */
@@ -19195,11 +19166,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       IsRoot: 512,
 
       /**
-       * Index of the current init phase on last 22 bits
+       * Whether this moved LView was needs to be refreshed at the insertion location because the
+       * declaration was dirty.
        */
-      IndexWithinInitPhaseIncrementer: 1024,
-      IndexWithinInitPhaseShift: 10,
-      IndexWithinInitPhaseReset: 1023
+      RefreshTransplantedView: 1024,
+
+      /**
+       * Index of the current init phase on last 21 bits
+       */
+      IndexWithinInitPhaseIncrementer: 2048,
+      IndexWithinInitPhaseShift: 11,
+      IndexWithinInitPhaseReset: 2047
     };
     /** @enum {number} */
 
@@ -19305,18 +19282,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var TYPE = 1;
     /**
-     * Below are constants for LContainer indices to help us look up LContainer members
-     * without having to remember the specific indices.
-     * Uglify will inline these when minifying so there shouldn't be a cost.
+     * Flag to signify that this `LContainer` may have transplanted views which need to be change
+     * detected. (see: `LView[DECLARATION_COMPONENT_VIEW])`.
+     *
+     * This flag, once set, is never unset for the `LContainer`. This means that when unset we can skip
+     * a lot of work in `refreshEmbeddedViews`. But when set we still need to verify
+     * that the `MOVED_VIEWS` are transplanted and on-push.
      * @type {?}
      */
 
-    var ACTIVE_INDEX = 2; // PARENT and NEXT are indices 3 and 4
+    var HAS_TRANSPLANTED_VIEWS = 2; // PARENT, NEXT, TRANSPLANTED_VIEWS_TO_REFRESH are indices 3, 4, and 5
     // As we already have these constants in LView, we don't need to re-create them.
-
-    /** @type {?} */
-
-    var MOVED_VIEWS = 5; // T_HOST is index 6
+    // T_HOST is index 6
     // We already have this constants in LView, we don't need to re-create it.
 
     /** @type {?} */
@@ -19325,6 +19302,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /** @type {?} */
 
     var VIEW_REFS = 8;
+    /** @type {?} */
+
+    var MOVED_VIEWS = 9;
     /**
      * Size of LContainer's header. Represents the index after which all views in the
      * container will be inserted. We need to keep a record of current views so we know
@@ -19333,36 +19313,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      * @type {?}
      */
 
-    var CONTAINER_HEADER_OFFSET = 9;
-    /** @enum {number} */
-
-    var ActiveIndexFlag = {
-      /**
-       * Flag which signifies that the `LContainer` does not have any inline embedded views.
-       */
-      DYNAMIC_EMBEDDED_VIEWS_ONLY: -1,
-
-      /**
-       * Flag to signify that this `LContainer` may have transplanted views which need to be change
-       * detected. (see: `LView[DECLARATION_COMPONENT_VIEW])`.
-       *
-       * This flag once set is never unset for the `LContainer`. This means that when unset we can skip
-       * a lot of work in `refreshDynamicEmbeddedViews`. But when set we still need to verify
-       * that the `MOVED_VIEWS` are transplanted and on-push.
-       */
-      HAS_TRANSPLANTED_VIEWS: 1,
-
-      /**
-       * Number of bits to shift inline embedded views counter to make space for other flags.
-       */
-      SHIFT: 1,
-
-      /**
-       * When incrementing the active index for inline embedded views, the amount to increment to leave
-       * space for other flags.
-       */
-      INCREMENT: 2
-    };
+    var CONTAINER_HEADER_OFFSET = 10;
     /**
      * The state associated with a container.
      *
@@ -19550,15 +19501,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     function assertDataNext(lView, index, arr) {
       if (arr == null) arr = lView;
       assertEqual(arr.length, index, "index ".concat(index, " expected to be at the end of arr (length ").concat(arr.length, ")"));
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-
-
-    function assertLContainerOrUndefined(value) {
-      value && assertEqual(isLContainer(value), true, 'Expecting LContainer or undefined or null');
     }
     /**
      * @param {?} value
@@ -20171,27 +20113,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       lView[PREORDER_HOOK_FLAGS] = 0;
     }
     /**
+     * Updates the `TRANSPLANTED_VIEWS_TO_REFRESH` counter on the `LContainer` as well as the parents
+     * whose
+     *  1. counter goes from 0 to 1, indicating that there is a new child that has a view to refresh
+     *  or
+     *  2. counter goes from 1 to 0, indicating there are no more descendant views to refresh
      * @param {?} lContainer
+     * @param {?} amount
      * @return {?}
      */
 
 
-    function getLContainerActiveIndex(lContainer) {
-      return lContainer[ACTIVE_INDEX] >> 1
-      /* SHIFT */
-      ;
-    }
-    /**
-     * @param {?} lContainer
-     * @param {?} index
-     * @return {?}
-     */
+    function updateTransplantedViewCount(lContainer, amount) {
+      lContainer[TRANSPLANTED_VIEWS_TO_REFRESH] += amount;
+      /** @type {?} */
 
+      var viewOrContainer = lContainer;
+      /** @type {?} */
 
-    function setLContainerActiveIndex(lContainer, index) {
-      lContainer[ACTIVE_INDEX] = index << 1
-      /* SHIFT */
-      ;
+      var parent = lContainer[PARENT];
+
+      while (parent !== null && (amount === 1 && viewOrContainer[TRANSPLANTED_VIEWS_TO_REFRESH] === 1 || amount === -1 && viewOrContainer[TRANSPLANTED_VIEWS_TO_REFRESH] === 0)) {
+        parent[TRANSPLANTED_VIEWS_TO_REFRESH] += amount;
+        viewOrContainer = parent;
+        parent = parent[PARENT];
+      }
     }
     /**
      * @fileoverview added by tsickle
@@ -20497,7 +20443,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /** @type {?} */
       var lFrame = instructionState.lFrame;
       lFrame.bindingIndex = lFrame.bindingRootIndex = bindingRootIndex;
-      lFrame.currentDirectiveIndex = currentDirectiveIndex;
+      setCurrentDirectiveIndex(currentDirectiveIndex);
     }
     /**
      * When host binding is executing this points to the directive index.
@@ -20509,6 +20455,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     function getCurrentDirectiveIndex() {
       return instructionState.lFrame.currentDirectiveIndex;
+    }
+    /**
+     * Sets an index of a directive whose `hostBindings` are being processed.
+     *
+     * @param {?} currentDirectiveIndex `TData` index where current directive instance can be found.
+     * @return {?}
+     */
+
+
+    function setCurrentDirectiveIndex(currentDirectiveIndex) {
+      instructionState.lFrame.currentDirectiveIndex = currentDirectiveIndex;
+    }
+    /**
+     * Retrieve the current `DirectiveDef` which is active when `hostBindings` instruction is being
+     * executed.
+     *
+     * @param {?} tData Current `TData` where the `DirectiveDef` will be looked up at.
+     * @return {?}
+     */
+
+
+    function getCurrentDirectiveDef(tData) {
+      /** @type {?} */
+      var currentDirectiveIndex = instructionState.lFrame.currentDirectiveIndex;
+      return currentDirectiveIndex === -1 ? null :
+      /** @type {?} */
+      tData[currentDirectiveIndex];
     }
     /**
      * @return {?}
@@ -21064,7 +21037,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if ((flags & 3
       /* InitPhaseStateMask */
       ) === initPhase) {
-        flags &= 1023
+        flags &= 2047
         /* IndexWithinInitPhaseReset */
         ;
         flags += 1
@@ -21166,7 +21139,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       if (isInitHook) {
         /** @type {?} */
-        var indexWithintInitPhase = currentView[FLAGS] >> 10
+        var indexWithintInitPhase = currentView[FLAGS] >> 11
         /* IndexWithinInitPhaseShift */
         ; // The init phase state must be always checked here as it may have been recursively
         // updated
@@ -21176,7 +21149,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         && (currentView[FLAGS] & 3
         /* InitPhaseStateMask */
         ) === initPhase) {
-          currentView[FLAGS] += 1024
+          currentView[FLAGS] += 2048
           /* IndexWithinInitPhaseIncrementer */
           ;
           hook.call(directive);
@@ -22825,32 +22798,45 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       */
       function () {
         /** @type {?} */
-        var proto =
-        /** @type {?} */
-        Object.getPrototypeOf(type.prototype).constructor;
+        var ownConstructor = type.prototype.constructor;
         /** @type {?} */
 
-        var factory =
+        var ownFactory = ownConstructor[NG_FACTORY_DEF] || ɵɵgetFactoryOf(ownConstructor);
         /** @type {?} */
-        proto[NG_FACTORY_DEF] || ɵɵgetFactoryOf(proto);
 
-        if (factory !== null) {
-          return factory;
-        } else {
-          // There is no factory defined. Either this was improper usage of inheritance
-          // (no Angular decorator on the superclass) or there is no constructor at all
-          // in the inheritance chain. Since the two cases cannot be distinguished, the
-          // latter has to be assumed.
-          return (
-            /**
-            * @param {?} t
-            * @return {?}
-            */
-            function (t) {
-              return new t();
-            }
-          );
-        }
+        var objectPrototype = Object.prototype;
+        /** @type {?} */
+
+        var parent = Object.getPrototypeOf(type.prototype).constructor; // Go up the prototype until we hit `Object`.
+
+        while (parent && parent !== objectPrototype) {
+          /** @type {?} */
+          var factory = parent[NG_FACTORY_DEF] || ɵɵgetFactoryOf(parent); // If we hit something that has a factory and the factory isn't the same as the type,
+          // we've found the inherited factory. Note the check that the factory isn't the type's
+          // own factory is redundant in most cases, but if the user has custom decorators on the
+          // class, this lookup will start one level down in the prototype chain, causing us to
+          // find the own factory first and potentially triggering an infinite loop downstream.
+
+          if (factory && factory !== ownFactory) {
+            return factory;
+          }
+
+          parent = Object.getPrototypeOf(parent);
+        } // There is no factory defined. Either this was improper usage of inheritance
+        // (no Angular decorator on the superclass) or there is no constructor at all
+        // in the inheritance chain. Since the two cases cannot be distinguished, the
+        // latter has to be assumed.
+
+
+        return (
+          /**
+          * @param {?} t
+          * @return {?}
+          */
+          function (t) {
+            return new t();
+          }
+        );
       });
     }
     /**
@@ -26675,6 +26661,39 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       );
     }
     /**
+     * Gets the first `LContainer` in the LView or `null` if none exists.
+     * @param {?} lView
+     * @return {?}
+     */
+
+
+    function getFirstLContainer(lView) {
+      return getNearestLContainer(lView[CHILD_HEAD]);
+    }
+    /**
+     * Gets the next `LContainer` that is a sibling of the given container.
+     * @param {?} container
+     * @return {?}
+     */
+
+
+    function getNextLContainer(container) {
+      return getNearestLContainer(container[NEXT]);
+    }
+    /**
+     * @param {?} viewOrContainer
+     * @return {?}
+     */
+
+
+    function getNearestLContainer(viewOrContainer) {
+      while (viewOrContainer !== null && !isLContainer(viewOrContainer)) {
+        viewOrContainer = viewOrContainer[NEXT];
+      }
+
+      return viewOrContainer;
+    }
+    /**
      * @fileoverview added by tsickle
      * Generated from: packages/core/src/render3/instructions/advance.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
@@ -27599,6 +27618,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
        * @param {?} firstChild
        * @param {?} schemas
        * @param {?} consts
+       * @param {?} incompleteFirstPass
        */
       function TView(type, //
       id, //
@@ -27629,7 +27649,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       pipeRegistry, //
       firstChild, //
       schemas, //
-      consts) {
+      consts, //
+      incompleteFirstPass //
+      ) {
         _classCallCheck(this, TView);
 
         this.type = type;
@@ -27662,6 +27684,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.firstChild = firstChild;
         this.schemas = schemas;
         this.consts = consts;
+        this.incompleteFirstPass = incompleteFirstPass;
       }
       /**
        * @return {?}
@@ -27707,8 +27730,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
        * @param {?} parent
        * @param {?} projection
        * @param {?} styles
+       * @param {?} stylesWithoutHost
        * @param {?} residualStyles
        * @param {?} classes
+       * @param {?} classesWithoutHost
        * @param {?} residualClasses
        * @param {?} classBindings
        * @param {?} styleBindings
@@ -27737,8 +27762,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       parent, //
       projection, //
       styles, //
+      stylesWithoutHost, //
       residualStyles, //
       classes, //
+      classesWithoutHost, //
       residualClasses, //
       classBindings, //
       styleBindings) {
@@ -27768,8 +27795,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.parent = parent;
         this.projection = projection;
         this.styles = styles;
+        this.stylesWithoutHost = stylesWithoutHost;
         this.residualStyles = residualStyles;
         this.classes = classes;
+        this.classesWithoutHost = classesWithoutHost;
         this.residualClasses = residualClasses;
         this.classBindings = classBindings;
         this.styleBindings = styleBindings;
@@ -28210,7 +28239,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             isRoot: !!(flags & 512
             /* IsRoot */
             ),
-            indexWithinInitPhase: flags >> 10
+            indexWithinInitPhase: flags >> 11
             /* IndexWithinInitPhaseShift */
 
           };
@@ -28488,22 +28517,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       _createClass2(LContainerDebug, [{
-        key: "activeIndex",
-        get: function get() {
-          return getLContainerActiveIndex(this._raw_lContainer);
-        }
-        /**
-         * @return {?}
-         */
-
-      }, {
         key: "hasTransplantedViews",
         get: function get() {
-          return (this._raw_lContainer[ACTIVE_INDEX] & 1
-          /* HAS_TRANSPLANTED_VIEWS */
-          ) === 1
-          /* HAS_TRANSPLANTED_VIEWS */
-          ;
+          return this._raw_lContainer[HAS_TRANSPLANTED_VIEWS];
         }
         /**
          * @return {?}
@@ -29310,7 +29326,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         , index, null, null);
       }
 
-      return lView[T_HOST] =
+      lView[T_HOST] =
       /** @type {?} */
       tNode;
     }
@@ -29427,6 +29443,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         if (components !== null) {
           renderChildComponents(lView, components);
         }
+      } catch (error) {
+        // If we didn't manage to get past the first template pass due to
+        // an error, mark the view as corrupted so we can try to recover.
+        if (tView.firstCreatePass) {
+          tView.incompleteFirstPass = true;
+        }
+
+        throw error;
       } finally {
         lView[FLAGS] &= ~4
         /* CreationMode */
@@ -29506,9 +29530,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             /* OnInitHooksToBeRun */
             );
           }
-        }
+        } // First mark transplanted views that are declared in this lView as needing a refresh at their
+        // insertion points. This is needed to avoid the situation where the template is defined in this
+        // `LView` but its declaration appears after the insertion component.
 
-        refreshDynamicEmbeddedViews(lView); // Content query results must be refreshed before content hooks are called.
+
+        markTransplantedViewsForRefresh(lView);
+        refreshEmbeddedViews(lView); // Content query results must be refreshed before content hooks are called.
 
         if (tView.contentQueries !== null) {
           refreshContentQueries(tView, lView);
@@ -29612,6 +29640,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           /* FirstLViewPass */
           );
         }
+
+        if (lView[FLAGS] & 1024
+        /* RefreshTransplantedView */
+        ) {
+            lView[FLAGS] &= ~1024
+            /* RefreshTransplantedView */
+            ;
+            updateTransplantedViewCount(
+            /** @type {?} */
+            lView[PARENT], -1);
+          }
       } finally {
         leaveView();
       }
@@ -29781,9 +29820,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     function getOrCreateTComponentView(def) {
-      return def.tView || (def.tView = createTView(1
-      /* Component */
-      , -1, def.template, def.decls, def.vars, def.directiveDefs, def.pipeDefs, def.viewQuery, def.schemas, def.consts));
+      /** @type {?} */
+      var tView = def.tView; // Create a TView if there isn't one, or recreate it if the first create pass didn't
+      // complete successfuly since we can't know for sure whether it's in a usable shape.
+
+      if (tView === null || tView.incompleteFirstPass) {
+        return def.tView = createTView(1
+        /* Component */
+        , -1, def.template, def.decls, def.vars, def.directiveDefs, def.pipeDefs, def.viewQuery, def.schemas, def.consts);
+      }
+
+      return tView;
     }
     /**
      * Creates a TView instance
@@ -29847,8 +29894,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       typeof pipes === 'function' ? pipes() : pipes, // pipeRegistry: PipeDefList|null,
       null, // firstChild: TNode|null,
       schemas, // schemas: SchemaMetadata[]|null,
-      consts) : // consts: TConstants|null
-      {
+      consts, // consts: TConstants|null
+      false // incompleteFirstPass: boolean
+      ) : {
         type: type,
         id: viewIndex,
         blueprint: blueprint,
@@ -29880,7 +29928,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         pipeRegistry: typeof pipes === 'function' ? pipes() : pipes,
         firstChild: null,
         schemas: schemas,
-        consts: consts
+        consts: consts,
+        incompleteFirstPass: false
       };
     }
     /**
@@ -30049,8 +30098,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       tParent, // parent: TElementNode|TContainerNode|null
       null, // projection: number|(ITNode|RNode[])[]|null
       null, // styles: string|null
+      null, // stylesWithoutHost: string|null
       undefined, // residualStyles: string|null
       null, // classes: string|null
+      null, // classesWithoutHost: string|null
       undefined,
       /** @type {?} */
       0,
@@ -30079,8 +30130,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         parent: tParent,
         projection: null,
         styles: null,
+        stylesWithoutHost: null,
         residualStyles: undefined,
         classes: null,
+        classesWithoutHost: null,
         residualClasses: undefined,
         classBindings:
         /** @type {?} */
@@ -30735,18 +30788,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /** @type {?} */
 
       var elementIndex = tNode.index - HEADER_OFFSET;
+      /** @type {?} */
+
+      var currentDirectiveIndex = getCurrentDirectiveIndex();
 
       try {
         setSelectedIndex(elementIndex);
 
-        for (var i = start; i < end; i++) {
+        for (var dirIndex = start; dirIndex < end; dirIndex++) {
           /** @type {?} */
           var def =
           /** @type {?} */
-          tView.data[i];
+          tView.data[dirIndex];
           /** @type {?} */
 
-          var directive = lView[i];
+          var directive = lView[dirIndex];
+          setCurrentDirectiveIndex(dirIndex);
 
           if (def.hostBindings !== null || def.hostVars !== 0 || def.hostAttrs !== null) {
             invokeHostBindingsInCreationMode(def, directive);
@@ -30756,6 +30813,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       } finally {
         setSelectedIndex(-1);
+        setCurrentDirectiveIndex(currentDirectiveIndex);
       }
     }
     /**
@@ -31184,138 +31242,88 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       var lContainer = new (ngDevMode ? LContainerArray : Array)(hostNative, // host native
       true, // Boolean `true` in this position signifies that this is an `LContainer`
-      -1
-      /* DYNAMIC_EMBEDDED_VIEWS_ONLY */
-      << 1
-      /* SHIFT */
-      , // active index
+      false, // has transplanted views
       currentView, // parent
       null, // next
-      null, // queries
+      0, // transplanted views to refresh count
       tNode, // t_host
       _native10, // native,
+      null, // view refs
       null);
+      ngDevMode && assertEqual(lContainer.length, CONTAINER_HEADER_OFFSET, 'Should allocate correct number of slots for LContainer header.');
       ngDevMode && attachLContainerDebug(lContainer);
       return lContainer;
     }
     /**
-     * Goes over dynamic embedded views (ones created through ViewContainerRef APIs) and refreshes
+     * Goes over embedded views (ones created through ViewContainerRef APIs) and refreshes
      * them by executing an associated template function.
      * @param {?} lView
      * @return {?}
      */
 
 
-    function refreshDynamicEmbeddedViews(lView) {
-      /** @type {?} */
-      var viewOrContainer = lView[CHILD_HEAD];
+    function refreshEmbeddedViews(lView) {
+      for (var lContainer = getFirstLContainer(lView); lContainer !== null; lContainer = getNextLContainer(lContainer)) {
+        for (var i = CONTAINER_HEADER_OFFSET; i < lContainer.length; i++) {
+          /** @type {?} */
+          var embeddedLView = lContainer[i];
+          /** @type {?} */
 
-      while (viewOrContainer !== null) {
-        // Note: viewOrContainer can be an LView or an LContainer instance, but here we are only
-        // interested in LContainer
+          var embeddedTView = embeddedLView[TVIEW];
+          ngDevMode && assertDefined(embeddedTView, 'TView must be allocated');
 
-        /** @type {?} */
-        var activeIndexFlag = void 0;
-
-        if (isLContainer(viewOrContainer) && (activeIndexFlag = viewOrContainer[ACTIVE_INDEX]) >> 1
-        /* SHIFT */
-        === -1
-        /* DYNAMIC_EMBEDDED_VIEWS_ONLY */
-        ) {
-            for (var i = CONTAINER_HEADER_OFFSET; i < viewOrContainer.length; i++) {
-              /** @type {?} */
-              var embeddedLView =
-              /** @type {?} */
-              viewOrContainer[i];
-              /** @type {?} */
-
-              var embeddedTView = embeddedLView[TVIEW];
-              ngDevMode && assertDefined(embeddedTView, 'TView must be allocated');
-
-              if (viewAttachedToChangeDetector(embeddedLView)) {
-                refreshView(embeddedTView, embeddedLView, embeddedTView.template,
-                /** @type {?} */
-                embeddedLView[CONTEXT]);
-              }
-            }
-
-            if ((activeIndexFlag & 1
-            /* HAS_TRANSPLANTED_VIEWS */
-            ) !== 0) {
-              // We should only CD moved views if the component where they were inserted does not match
-              // the component where they were declared and insertion is on-push. Moved views also
-              // contains intra component moves, or check-always which need to be skipped.
-              refreshTransplantedViews(viewOrContainer,
-              /** @type {?} */
-              lView[DECLARATION_COMPONENT_VIEW]);
-            }
+          if (viewAttachedToChangeDetector(embeddedLView)) {
+            refreshView(embeddedTView, embeddedLView, embeddedTView.template,
+            /** @type {?} */
+            embeddedLView[CONTEXT]);
           }
-
-        viewOrContainer = viewOrContainer[NEXT];
+        }
       }
     }
     /**
-     * Refresh transplanted LViews.
+     * Mark transplanted views as needing to be refreshed at their insertion points.
      *
-     * See: `ActiveIndexFlag.HAS_TRANSPLANTED_VIEWS` and `LView[DECLARATION_COMPONENT_VIEW]` for
-     * explanation of transplanted views.
-     *
-     * @param {?} lContainer The `LContainer` which has transplanted views.
-     * @param {?} declaredComponentLView The `lContainer` parent component `LView`.
+     * @param {?} lView The `LView` that may have transplanted views.
      * @return {?}
      */
 
 
-    function refreshTransplantedViews(lContainer, declaredComponentLView) {
-      /** @type {?} */
-      var movedViews =
-      /** @type {?} */
-      lContainer[MOVED_VIEWS];
-      ngDevMode && assertDefined(movedViews, 'Transplanted View flags set but missing MOVED_VIEWS');
-
-      for (var i = 0; i < movedViews.length; i++) {
-        /** @type {?} */
-        var movedLView =
-        /** @type {?} */
-        movedViews[i];
+    function markTransplantedViewsForRefresh(lView) {
+      for (var lContainer = getFirstLContainer(lView); lContainer !== null; lContainer = getNextLContainer(lContainer)) {
+        if (!lContainer[HAS_TRANSPLANTED_VIEWS]) continue;
         /** @type {?} */
 
-        var insertionLContainer =
+        var movedViews =
         /** @type {?} */
-        movedLView[PARENT];
-        ngDevMode && assertLContainer(insertionLContainer);
-        /** @type {?} */
+        lContainer[MOVED_VIEWS];
+        ngDevMode && assertDefined(movedViews, 'Transplanted View flags set but missing MOVED_VIEWS');
 
-        var insertedComponentLView =
-        /** @type {?} */
-        insertionLContainer[PARENT][DECLARATION_COMPONENT_VIEW];
-        ngDevMode && assertDefined(insertedComponentLView, 'Missing LView'); // Check if we have a transplanted view by compering declaration and insertion location.
-
-        if (insertedComponentLView !== declaredComponentLView) {
-          // Yes the `LView` is transplanted.
-          // Here we would like to know if the component is `OnPush`. We don't have
-          // explicit `OnPush` flag instead we set `CheckAlways` to false (which is `OnPush`)
-          // Not to be confused with `ManualOnPush` which is used with wether a DOM event
-          // should automatically mark a view as dirty.
-
+        for (var i = 0; i < movedViews.length; i++) {
           /** @type {?} */
-          var insertionComponentIsOnPush = (insertedComponentLView[FLAGS] & 16
-          /* CheckAlways */
-          ) === 0;
+          var movedLView =
+          /** @type {?} */
+          movedViews[i];
+          /** @type {?} */
 
-          if (insertionComponentIsOnPush) {
-            // Here we know that the template has been transplanted across components and is
-            // on-push (not just moved within a component). If the insertion is marked dirty, then
-            // there is no need to CD here as we will do it again later when we get to insertion
-            // point.
+          var insertionLContainer =
+          /** @type {?} */
+          movedLView[PARENT];
+          ngDevMode && assertLContainer(insertionLContainer); // We don't want to increment the counter if the moved LView was already marked for
+          // refresh.
 
-            /** @type {?} */
-            var movedTView = movedLView[TVIEW];
-            ngDevMode && assertDefined(movedTView, 'TView must be allocated');
-            refreshView(movedTView, movedLView, movedTView.template,
-            /** @type {?} */
-            movedLView[CONTEXT]);
-          }
+          if ((movedLView[FLAGS] & 1024
+          /* RefreshTransplantedView */
+          ) === 0) {
+            updateTransplantedViewCount(insertionLContainer, 1);
+          } // Note, it is possible that the `movedViews` is tracking views that are transplanted *and*
+          // those that aren't (declaration component === insertion component). In the latter case,
+          // it's fine to add the flag, as we will clear it immediately in
+          // `refreshEmbeddedViews` for the view currently being refreshed.
+
+
+          movedLView[FLAGS] |= 1024
+          /* RefreshTransplantedView */
+          ;
         }
       }
     } /////////////
@@ -31335,14 +31343,69 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       var componentView = getComponentLViewByIndex(componentHostIdx, hostLView); // Only attached components that are CheckAlways or OnPush and dirty should be refreshed
 
-      if (viewAttachedToChangeDetector(componentView) && componentView[FLAGS] & (16
-      /* CheckAlways */
-      | 64
-      /* Dirty */
-      )) {
+      if (viewAttachedToChangeDetector(componentView)) {
         /** @type {?} */
-        var componentTView = componentView[TVIEW];
-        refreshView(componentTView, componentView, componentTView.template, componentView[CONTEXT]);
+        var tView = componentView[TVIEW];
+
+        if (componentView[FLAGS] & (16
+        /* CheckAlways */
+        | 64
+        /* Dirty */
+        )) {
+          refreshView(tView, componentView, tView.template, componentView[CONTEXT]);
+        } else if (componentView[TRANSPLANTED_VIEWS_TO_REFRESH] > 0) {
+          // Only attached components that are CheckAlways or OnPush and dirty should be refreshed
+          refreshContainsDirtyView(componentView);
+        }
+      }
+    }
+    /**
+     * Refreshes all transplanted views marked with `LViewFlags.RefreshTransplantedView` that are
+     * children or descendants of the given lView.
+     *
+     * @param {?} lView The lView which contains descendant transplanted views that need to be refreshed.
+     * @return {?}
+     */
+
+
+    function refreshContainsDirtyView(lView) {
+      for (var lContainer = getFirstLContainer(lView); lContainer !== null; lContainer = getNextLContainer(lContainer)) {
+        for (var i = CONTAINER_HEADER_OFFSET; i < lContainer.length; i++) {
+          /** @type {?} */
+          var embeddedLView = lContainer[i];
+
+          if (embeddedLView[FLAGS] & 1024
+          /* RefreshTransplantedView */
+          ) {
+              /** @type {?} */
+              var embeddedTView = embeddedLView[TVIEW];
+              ngDevMode && assertDefined(embeddedTView, 'TView must be allocated');
+              refreshView(embeddedTView, embeddedLView, embeddedTView.template,
+              /** @type {?} */
+              embeddedLView[CONTEXT]);
+            } else if (embeddedLView[TRANSPLANTED_VIEWS_TO_REFRESH] > 0) {
+            refreshContainsDirtyView(embeddedLView);
+          }
+        }
+      }
+      /** @type {?} */
+
+
+      var tView = lView[TVIEW]; // Refresh child component views.
+
+      /** @type {?} */
+
+      var components = tView.components;
+
+      if (components !== null) {
+        for (var _i6 = 0; _i6 < components.length; _i6++) {
+          /** @type {?} */
+          var componentView = getComponentLViewByIndex(components[_i6], lView); // Only attached components that are CheckAlways or OnPush and dirty should be refreshed
+
+          if (viewAttachedToChangeDetector(componentView) && componentView[TRANSPLANTED_VIEWS_TO_REFRESH] > 0) {
+            refreshContainsDirtyView(componentView);
+          }
+        }
       }
     }
     /**
@@ -31720,18 +31783,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /**
      * There are cases where the sub component's renderer needs to be included
      * instead of the current renderer (see the componentSyntheticHost* instructions).
+     * @param {?} currentDef
      * @param {?} tNode
      * @param {?} lView
      * @return {?}
      */
 
 
-    function loadComponentRenderer(tNode, lView) {
-      /** @type {?} */
-      var componentLView =
-      /** @type {?} */
-      unwrapLView(lView[tNode.index]);
-      return componentLView[RENDERER];
+    function loadComponentRenderer(currentDef, tNode, lView) {
+      // TODO(FW-2043): the `currentDef` is null when host bindings are invoked while creating root
+      // component (see packages/core/src/render3/component.ts). This is not consistent with the process
+      // of creating inner components, when current directive index is available in the state. In order
+      // to avoid relying on current def being `null` (thus special-casing root component creation), the
+      // process of creating root component should be unified with the process of creating inner
+      // components.
+      if (currentDef === null || isComponentDef(currentDef)) {
+        lView =
+        /** @type {?} */
+        unwrapLView(lView[tNode.index]);
+      }
+
+      return lView[RENDERER];
     }
     /**
      * Handles an error thrown in an LView.
@@ -32171,26 +32243,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       ngDevMode && assertDefined(insertedComponentLView, 'Missing insertedComponentLView');
       /** @type {?} */
 
-      var insertedComponentIsOnPush = (insertedComponentLView[FLAGS] & 16
-      /* CheckAlways */
-      ) !== 16
-      /* CheckAlways */
-      ;
+      var declaredComponentLView = lView[DECLARATION_COMPONENT_VIEW];
+      ngDevMode && assertDefined(declaredComponentLView, 'Missing declaredComponentLView');
 
-      if (insertedComponentIsOnPush) {
-        /** @type {?} */
-        var declaredComponentLView = lView[DECLARATION_COMPONENT_VIEW];
-        ngDevMode && assertDefined(declaredComponentLView, 'Missing declaredComponentLView');
-
-        if (declaredComponentLView !== insertedComponentLView) {
-          // At this point the declaration-component is not same as insertion-component and we are in
-          // on-push mode, this means that this is a transplanted view. Mark the declared lView as
-          // having
-          // transplanted views so that those views can participate in CD.
-          declarationContainer[ACTIVE_INDEX] |= 1
-          /* HAS_TRANSPLANTED_VIEWS */
-          ;
-        }
+      if (declaredComponentLView !== insertedComponentLView) {
+        // At this point the declaration-component is not same as insertion-component; this means that
+        // this is a transplanted view. Mark the declared lView as having transplanted views so that
+        // those views can participate in CD.
+        declarationContainer[HAS_TRANSPLANTED_VIEWS] = true;
       }
 
       if (movedViews === null) {
@@ -32216,8 +32276,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       declarationContainer[MOVED_VIEWS];
       /** @type {?} */
 
-      var declaredViewIndex = movedViews.indexOf(lView);
-      movedViews.splice(declaredViewIndex, 1);
+      var declarationViewIndex = movedViews.indexOf(lView);
+      /** @type {?} */
+
+      var insertionLContainer =
+      /** @type {?} */
+      lView[PARENT];
+      ngDevMode && assertLContainer(insertionLContainer); // If the view was marked for refresh but then detached before it was checked (where the flag
+      // would be cleared and the counter decremented), we need to decrement the view counter here
+      // instead.
+
+      if (lView[FLAGS] & 1024
+      /* RefreshTransplantedView */
+      ) {
+          updateTransplantedViewCount(insertionLContainer, -1);
+        }
+
+      movedViews.splice(declarationViewIndex, 1);
     }
     /**
      * Detaches a view from a container.
@@ -33407,11 +33482,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this._cdRefInjectingView = _cdRefInjectingView;
         this._appRef = null;
         this._viewContainerRef = null;
-        /**
-         * \@internal
-         */
-
-        this._tViewNode = null;
       }
       /**
        * @return {?}
@@ -33874,17 +33944,25 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             componentView[T_HOST];
             /** @type {?} */
 
-            var parentView = getLViewParent(componentView);
+            var slotIdx =
+            /** @type {?} */
+            tNode.projection;
+            ngDevMode && assertDefined(componentHost.projection, 'Components with projection nodes (<ng-content>) must have projection slots defined.');
             /** @type {?} */
 
-            var firstProjectedNode =
+            var nodesInSlot =
             /** @type {?} */
-            componentHost.projection[
-            /** @type {?} */
-            tNode.projection];
+            componentHost.projection[slotIdx];
 
-            if (firstProjectedNode !== null && parentView !== null) {
-              collectNativeNodes(parentView[TVIEW], parentView, firstProjectedNode, result, true);
+            if (Array.isArray(nodesInSlot)) {
+              result.push.apply(result, _toConsumableArray(nodesInSlot));
+            } else {
+              /** @type {?} */
+              var parentView =
+              /** @type {?} */
+              getLViewParent(componentView);
+              ngDevMode && assertDefined(parentView, 'Component views should always have a parent view (component\'s host view)');
+              collectNativeNodes(parentView[TVIEW], parentView, nodesInSlot, result, true);
             }
           }
 
@@ -34027,13 +34105,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               }
 
               renderView(embeddedTView, embeddedLView, context);
-              /** @type {?} */
-
-              var viewRef = new ViewRef(embeddedLView);
-              viewRef._tViewNode =
-              /** @type {?} */
-              embeddedLView[T_HOST];
-              return viewRef;
+              return new ViewRef(embeddedLView);
             }
           }]);
 
@@ -34429,9 +34501,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (isLContainer(slotValue)) {
         // If the host is a container, we don't need to create a new LContainer
         lContainer = slotValue;
-        setLContainerActiveIndex(lContainer, -1
-        /* DYNAMIC_EMBEDDED_VIEWS_ONLY */
-        );
       } else {
         /** @type {?} */
         var commentNode; // If the host is an element container, the native host element is guaranteed to be a
@@ -34701,7 +34770,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var DELEGATE_CTOR = /^function\s+\S+\(\)\s*{[\s\S]+\.apply\(this,\s*arguments\)/;
     var INHERITED_CLASS = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{/;
     var INHERITED_CLASS_WITH_CTOR = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{[\s\S]*constructor\s*\(/;
-    var INHERITED_CLASS_WITH_DELEGATE_CTOR = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{[\s\S]*constructor\s*\(\)\s*{\s+super\(\.\.\.arguments\)/;
+    var INHERITED_CLASS_WITH_DELEGATE_CTOR = /^class\s+[A-Za-z\d$_]*\s*extends\s+[^{]+{[\s\S]*constructor\s*\(\)\s*{\s*super\(\.\.\.arguments\)/;
     /**
      * Determine whether a stringified type is a class which delegates its constructor
      * to its parent.
@@ -39083,52 +39152,57 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      *
      * @param {?} tNode The `TNode` into which the styling information should be loaded.
      * @param {?} attrs `TAttributes` containing the styling information.
+     * @param {?} writeToHost Where should the resulting static styles be written?
+     *   - `false` Write to `TNode.stylesWithoutHost` / `TNode.classesWithoutHost`
+     *   - `true` Write to `TNode.styles` / `TNode.classes`
      * @return {?}
      */
 
 
-    function computeStaticStyling(tNode, attrs) {
+    function computeStaticStyling(tNode, attrs, writeToHost) {
       ngDevMode && assertFirstCreatePass(getTView(), 'Expecting to be called in first template pass only');
       /** @type {?} */
 
-      var styles = tNode.styles;
+      var styles = writeToHost ? tNode.styles : null;
       /** @type {?} */
 
-      var classes = tNode.classes;
+      var classes = writeToHost ? tNode.classes : null;
       /** @type {?} */
 
       var mode = 0;
 
-      for (var i = 0; i < attrs.length; i++) {
-        /** @type {?} */
-        var value = attrs[i];
+      if (attrs !== null) {
+        for (var i = 0; i < attrs.length; i++) {
+          /** @type {?} */
+          var value = attrs[i];
 
-        if (typeof value === 'number') {
-          mode = value;
-        } else if (mode == 1
-        /* Classes */
-        ) {
-            classes = concatStringsWithSpace(classes,
-            /** @type {?} */
-            value);
-          } else if (mode == 2
-        /* Styles */
-        ) {
-            /** @type {?} */
-            var style =
-            /** @type {?} */
-            value;
-            /** @type {?} */
+          if (typeof value === 'number') {
+            mode = value;
+          } else if (mode == 1
+          /* Classes */
+          ) {
+              classes = concatStringsWithSpace(classes,
+              /** @type {?} */
+              value);
+            } else if (mode == 2
+          /* Styles */
+          ) {
+              /** @type {?} */
+              var style =
+              /** @type {?} */
+              value;
+              /** @type {?} */
 
-            var styleValue =
-            /** @type {?} */
-            attrs[++i];
-            styles = concatStringsWithSpace(styles, style + ': ' + styleValue + ';');
-          }
+              var styleValue =
+              /** @type {?} */
+              attrs[++i];
+              styles = concatStringsWithSpace(styles, style + ': ' + styleValue + ';');
+            }
+        }
       }
 
-      styles !== null && (tNode.styles = styles);
-      classes !== null && (tNode.classes = classes);
+      writeToHost ? tNode.styles = styles : tNode.stylesWithoutHost = styles;
+      writeToHost ? tNode.classes = classes : tNode.classesWithoutHost = classes;
     }
     /**
      * @license
@@ -39642,8 +39716,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       var content = values[0];
 
-      for (var _i6 = 1; _i6 < values.length; _i6 += 2) {
-        content += renderStringify(values[_i6]) + values[_i6 + 1];
+      for (var _i7 = 1; _i7 < values.length; _i7 += 2) {
+        content += renderStringify(values[_i7]) + values[_i7 + 1];
       }
 
       return content;
@@ -40400,40 +40474,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }
     /**
      * @fileoverview added by tsickle
-     * Generated from: packages/core/src/render3/instructions/container.ts
+     * Generated from: packages/core/src/render3/instructions/template.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
-    /**
-     * Creates an LContainer for inline views, e.g.
-     *
-     * % if (showing) {
-     *   <div></div>
-     * % }
-     *
-     * \@codeGenApi
-     * @param {?} index The index of the container in the data array
-     *
-     * @return {?}
-     */
-
-
-    function ɵɵcontainer(index) {
-      /** @type {?} */
-      var lView = getLView();
-      /** @type {?} */
-
-      var tView = getTView();
-      /** @type {?} */
-
-      var tNode = containerInternal(tView, lView, index, null, null);
-
-      if (tView.firstCreatePass) {
-        tNode.tViews = [];
-      }
-
-      setIsNotParent();
-    }
     /**
      * @param {?} index
      * @param {?} tView
@@ -40535,144 +40579,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (localRefsIndex != null) {
         saveResolvedLocalsInData(lView, tNode, localRefExtractor);
       }
-    }
-    /**
-     * Sets a container up to receive views.
-     *
-     * \@codeGenApi
-     * @param {?} index The index of the container in the data array
-     *
-     * @return {?}
-     */
-
-
-    function ɵɵcontainerRefreshStart(index) {
-      /** @type {?} */
-      var lView = getLView();
-      /** @type {?} */
-
-      var tView = getTView();
-      /** @type {?} */
-
-      var previousOrParentTNode =
-      /** @type {?} */
-      load(tView.data, index);
-      ngDevMode && assertNodeType(previousOrParentTNode, 0
-      /* Container */
-      );
-      setPreviousOrParentTNode(previousOrParentTNode, true);
-      lView[index + HEADER_OFFSET][ACTIVE_INDEX] = 0; // We need to execute init hooks here so ngOnInit hooks are called in top level views
-      // before they are called in embedded views (for backwards compatibility).
-
-      if (!getCheckNoChangesMode()) {
-        /** @type {?} */
-        var hooksInitPhaseCompleted = (lView[FLAGS] & 3
-        /* InitPhaseStateMask */
-        ) === 3
-        /* InitPhaseCompleted */
-        ;
-
-        if (hooksInitPhaseCompleted) {
-          /** @type {?} */
-          var preOrderCheckHooks = tView.preOrderCheckHooks;
-
-          if (preOrderCheckHooks !== null) {
-            executeCheckHooks(lView, preOrderCheckHooks, null);
-          }
-        } else {
-          /** @type {?} */
-          var preOrderHooks = tView.preOrderHooks;
-
-          if (preOrderHooks !== null) {
-            executeInitAndCheckHooks(lView, preOrderHooks, 0
-            /* OnInitHooksToBeRun */
-            , null);
-          }
-
-          incrementInitPhaseFlags(lView, 0
-          /* OnInitHooksToBeRun */
-          );
-        }
-      }
-    }
-    /**
-     * Marks the end of the LContainer.
-     *
-     * Marking the end of LContainer is the time when to child views get inserted or removed.
-     *
-     * \@codeGenApi
-     * @return {?}
-     */
-
-
-    function ɵɵcontainerRefreshEnd() {
-      /** @type {?} */
-      var previousOrParentTNode = getPreviousOrParentTNode();
-
-      if (getIsParent()) {
-        setIsNotParent();
-      } else {
-        ngDevMode && assertNodeType(previousOrParentTNode, 2
-        /* View */
-        );
-        ngDevMode && assertHasParent(previousOrParentTNode);
-        previousOrParentTNode =
-        /** @type {?} */
-        previousOrParentTNode.parent;
-        setPreviousOrParentTNode(previousOrParentTNode, false);
-      }
-
-      ngDevMode && assertNodeType(previousOrParentTNode, 0
-      /* Container */
-      );
-      /** @type {?} */
-
-      var lContainer = getLView()[previousOrParentTNode.index];
-      /** @type {?} */
-
-      var nextIndex = getLContainerActiveIndex(lContainer); // remove extra views at the end of the container
-
-      while (nextIndex < lContainer.length - CONTAINER_HEADER_OFFSET) {
-        removeView(lContainer, nextIndex);
-      }
-    }
-    /**
-     * @param {?} tView
-     * @param {?} lView
-     * @param {?} nodeIndex
-     * @param {?} tagName
-     * @param {?} attrs
-     * @return {?}
-     */
-
-
-    function containerInternal(tView, lView, nodeIndex, tagName, attrs) {
-      ngDevMode && assertEqual(getBindingIndex(), tView.bindingStartIndex, 'container nodes should be created before any bindings');
-      /** @type {?} */
-
-      var adjustedIndex = nodeIndex + HEADER_OFFSET;
-      ngDevMode && assertDataInRange(lView, nodeIndex + HEADER_OFFSET);
-      ngDevMode && ngDevMode.rendererCreateComment++;
-      /** @type {?} */
-
-      var comment = lView[adjustedIndex] = lView[RENDERER].createComment(ngDevMode ? 'container' : '');
-      /** @type {?} */
-
-      var tNode = getOrCreateTNode(tView, lView[T_HOST], nodeIndex, 0
-      /* Container */
-      , tagName, attrs);
-      /** @type {?} */
-
-      var lContainer = lView[adjustedIndex] = createLContainer(comment, lView, comment, tNode);
-      appendChild(tView, lView, comment, tNode);
-      attachPatchData(comment, lView); // Containers are added to the current view tree instead of their embedded views
-      // because views can be removed and re-inserted.
-
-      addToViewTree(lView, lContainer);
-      ngDevMode && assertNodeType(getPreviousOrParentTNode(), 0
-      /* Container */
-      );
-      return tNode;
     }
     /**
      * @fileoverview added by tsickle
@@ -40891,8 +40797,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var hasDirectives = resolveDirectives(tView, lView, tNode, getConstant(tViewConsts, localRefsIndex));
       ngDevMode && warnAboutUnknownElement(tView, lView, _native12, tNode, hasDirectives);
 
+      if (tNode.attrs !== null) {
+        computeStaticStyling(tNode, tNode.attrs, false);
+      }
+
       if (tNode.mergedAttrs !== null) {
-        computeStaticStyling(tNode, tNode.mergedAttrs);
+        computeStaticStyling(tNode, tNode.mergedAttrs, true);
       }
 
       if (tView.queries !== null) {
@@ -41029,12 +40939,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }
 
-      if (tNode.classes !== null && hasClassInput(tNode)) {
-        setDirectiveInputsWhichShadowsStyling(tView, tNode, getLView(), tNode.classes, true);
+      if (tNode.classesWithoutHost != null && hasClassInput(tNode)) {
+        setDirectiveInputsWhichShadowsStyling(tView, tNode, getLView(), tNode.classesWithoutHost, true);
       }
 
-      if (tNode.styles !== null && hasStyleInput(tNode)) {
-        setDirectiveInputsWhichShadowsStyling(tView, tNode, getLView(), tNode.styles, false);
+      if (tNode.stylesWithoutHost != null && hasStyleInput(tNode)) {
+        setDirectiveInputsWhichShadowsStyling(tView, tNode, getLView(), tNode.stylesWithoutHost, false);
       }
     }
     /**
@@ -41133,7 +41043,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       // and execute directives on the ng-container.
 
       if (attrs !== null) {
-        computeStaticStyling(tNode, attrs);
+        computeStaticStyling(tNode, attrs, true);
       }
       /** @type {?} */
 
@@ -41255,193 +41165,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }
     /**
      * @fileoverview added by tsickle
-     * Generated from: packages/core/src/render3/instructions/embedded_view.ts
-     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
-
-    /**
-     * Marks the start of an embedded view.
-     *
-     * \@codeGenApi
-     * @param {?} viewBlockId The ID of this view
-     * @param {?} decls
-     * @param {?} vars
-     * @return {?} boolean Whether or not this view is in creation mode
-     *
-     */
-
-
-    function ɵɵembeddedViewStart(viewBlockId, decls, vars) {
-      /** @type {?} */
-      var lView = getLView();
-      /** @type {?} */
-
-      var previousOrParentTNode = getPreviousOrParentTNode(); // The previous node can be a view node if we are processing an inline for loop
-
-      /** @type {?} */
-
-      var containerTNode = previousOrParentTNode.type === 2
-      /* View */
-      ?
-      /** @type {?} */
-      previousOrParentTNode.parent : previousOrParentTNode;
-      /** @type {?} */
-
-      var lContainer =
-      /** @type {?} */
-      lView[containerTNode.index];
-      ngDevMode && assertNodeType(containerTNode, 0
-      /* Container */
-      );
-      /** @type {?} */
-
-      var viewToRender = scanForView(lContainer, getLContainerActiveIndex(lContainer), viewBlockId);
-
-      if (viewToRender) {
-        setIsParent();
-        enterView(viewToRender, viewToRender[TVIEW].node);
-      } else {
-        // When we create a new LView, we always reset the state of the instructions.
-        viewToRender = createLView(lView, getOrCreateEmbeddedTView(viewBlockId, decls, vars,
-        /** @type {?} */
-        containerTNode), null, 16
-        /* CheckAlways */
-        , null, null);
-        /** @type {?} */
-
-        var tParentNode = getIsParent() ? previousOrParentTNode : previousOrParentTNode && previousOrParentTNode.parent;
-        assignTViewNodeToLView(viewToRender[TVIEW], tParentNode, viewBlockId, viewToRender);
-        enterView(viewToRender, viewToRender[TVIEW].node);
-      }
-
-      if (lContainer) {
-        if (isCreationMode(viewToRender)) {
-          // it is a new view, insert it into collection of views for a given container
-          insertView(viewToRender[TVIEW], viewToRender, lContainer, getLContainerActiveIndex(lContainer));
-        }
-
-        lContainer[ACTIVE_INDEX] += 2
-        /* INCREMENT */
-        ;
-      }
-
-      return isCreationMode(viewToRender) ? 1
-      /* Create */
-      | 2
-      /* Update */
-      : 2
-      /* Update */
-      ;
-    }
-    /**
-     * Initialize the TView (e.g. static data) for the active embedded view.
-     *
-     * Each embedded view block must create or retrieve its own TView. Otherwise, the embedded view's
-     * static data for a particular node would overwrite the static data for a node in the view above
-     * it with the same index (since it's in the same template).
-     *
-     * @param {?} viewIndex The index of the TView in TNode.tViews
-     * @param {?} decls The number of nodes, local refs, and pipes in this template
-     * @param {?} vars The number of bindings and pure function bindings in this template
-     * @param {?} parent
-     * @return {?} TView
-     */
-
-
-    function getOrCreateEmbeddedTView(viewIndex, decls, vars, parent) {
-      /** @type {?} */
-      var tView = getLView()[TVIEW];
-      ngDevMode && assertNodeType(parent, 0
-      /* Container */
-      );
-      /** @type {?} */
-
-      var containerTViews =
-      /** @type {?} */
-      parent.tViews;
-      ngDevMode && assertDefined(containerTViews, 'TView expected');
-      ngDevMode && assertEqual(Array.isArray(containerTViews), true, 'TViews should be in an array');
-
-      if (viewIndex >= containerTViews.length || containerTViews[viewIndex] == null) {
-        containerTViews[viewIndex] = createTView(2
-        /* Embedded */
-        , viewIndex, null, decls, vars, tView.directiveRegistry, tView.pipeRegistry, null, null, tView.consts);
-      }
-
-      return containerTViews[viewIndex];
-    }
-    /**
-     * Looks for a view with a given view block id inside a provided LContainer.
-     * Removes views that need to be deleted in the process.
-     *
-     * @param {?} lContainer to search for views
-     * @param {?} startIdx starting index in the views array to search from
-     * @param {?} viewBlockId exact view block id to look for
-     * @return {?}
-     */
-
-
-    function scanForView(lContainer, startIdx, viewBlockId) {
-      for (var i = startIdx + CONTAINER_HEADER_OFFSET; i < lContainer.length; i++) {
-        /** @type {?} */
-        var viewAtPositionId = lContainer[i][TVIEW].id;
-
-        if (viewAtPositionId === viewBlockId) {
-          return lContainer[i];
-        } else if (viewAtPositionId < viewBlockId) {
-          // found a view that should not be at this position - remove
-          removeView(lContainer, i - CONTAINER_HEADER_OFFSET);
-        } else {
-          // found a view with id greater than the one we are searching for
-          // which means that required view doesn't exist and can't be found at
-          // later positions in the views array - stop the searchdef.cont here
-          break;
-        }
-      }
-
-      return null;
-    }
-    /**
-     * Marks the end of an embedded view.
-     *
-     * \@codeGenApi
-     * @return {?}
-     */
-
-
-    function ɵɵembeddedViewEnd() {
-      /** @type {?} */
-      var lView = getLView();
-      /** @type {?} */
-
-      var tView = getTView();
-      /** @type {?} */
-
-      var viewHost = lView[T_HOST];
-      /** @type {?} */
-
-      var context = lView[CONTEXT];
-
-      if (isCreationMode(lView)) {
-        renderView(tView, lView, context); // creation mode pass
-      }
-
-      refreshView(tView, lView, tView.template, context); // update mode pass
-      // update mode pass
-
-      /** @type {?} */
-
-      var lContainer =
-      /** @type {?} */
-      lView[PARENT];
-      ngDevMode && assertLContainerOrUndefined(lContainer);
-      leaveView();
-      setPreviousOrParentTNode(
-      /** @type {?} */
-      viewHost, false);
-    }
-    /**
-     * @fileoverview added by tsickle
      * Generated from: packages/core/src/render3/instructions/get_current_view.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
@@ -41533,7 +41256,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return ɵɵlistener;
     }
     /**
-     * Registers a synthetic host listener (e.g. `(\@foo.start)`) on a component.
+     * Registers a synthetic host listener (e.g. `(\@foo.start)`) on a component or directive.
      *
      * This instruction is for compatibility purposes and is designed to ensure that a
      * synthetic host listener (e.g. `\@HostListener('\@foo.start')`) properly gets rendered
@@ -41567,10 +41290,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var lView = getLView();
       /** @type {?} */
 
-      var renderer = loadComponentRenderer(tNode, lView);
+      var tView = getTView();
       /** @type {?} */
 
-      var tView = getTView();
+      var currentDef = getCurrentDirectiveDef(tView.data);
+      /** @type {?} */
+
+      var renderer = loadComponentRenderer(currentDef, tNode, lView);
       listenerInternal(tView, lView, renderer, tNode, eventName, listenerFn, useCapture, eventTargetResolver);
       return ɵɵcomponentHostSyntheticListener;
     }
@@ -43821,7 +43547,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           /** @type {?} */
 
 
-          var staticPrefix = isClassBased ? tNode.classes : tNode.styles;
+          var staticPrefix = isClassBased ? tNode.classesWithoutHost : tNode.stylesWithoutHost;
           ngDevMode && isClassBased === false && staticPrefix !== null && assertEqual(staticPrefix.endsWith(';'), true, 'Expecting static portion to end with \';\'');
 
           if (staticPrefix !== null) {
@@ -43914,7 +43640,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     function wrapInStaticStylingKey(tData, tNode, stylingKey, isClassBased) {
       /** @type {?} */
-      var hostDirectiveDef = getHostDirectiveDef(tData);
+      var hostDirectiveDef = getCurrentDirectiveDef(tData);
       /** @type {?} */
 
       var residual = isClassBased ? tNode.residualClasses : tNode.residualStyles;
@@ -44221,22 +43947,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       return stylingKey === undefined ? null : stylingKey;
-    }
-    /**
-     * Retrieve the current `DirectiveDef` which is active when `hostBindings` style instruction is
-     * being executed (or `null` if we are in `template`.)
-     *
-     * @param {?} tData Current `TData` where the `DirectiveDef` will be looked up at.
-     * @return {?}
-     */
-
-
-    function getHostDirectiveDef(tData) {
-      /** @type {?} */
-      var currentDirectiveIndex = getCurrentDirectiveIndex();
-      return currentDirectiveIndex === -1 ? null :
-      /** @type {?} */
-      tData[currentDirectiveIndex];
     }
     /**
      * Convert user input to `KeyValueArray`.
@@ -46305,7 +46015,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return ɵɵhostProperty;
     }
     /**
-     * Updates a synthetic host binding (e.g. `[\@foo]`) on a component.
+     * Updates a synthetic host binding (e.g. `[\@foo]`) on a component or directive.
      *
      * This instruction is for compatibility purposes and is designed to ensure that a
      * synthetic host binding (e.g. `\@HostBinding('\@foo')`) properly gets rendered in
@@ -46343,7 +46053,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         var tNode = getSelectedTNode();
         /** @type {?} */
 
-        var renderer = loadComponentRenderer(tNode, lView);
+        var currentDef = getCurrentDirectiveDef(tView.data);
+        /** @type {?} */
+
+        var renderer = loadComponentRenderer(currentDef, tNode, lView);
         elementPropertyInternal(tView, tNode, lView, propName, value, renderer, sanitizer, true);
         ngDevMode && storePropertyBindingMetadata(tView.data, tNode, propName, bindingIndex);
       }
@@ -47173,7 +46886,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       var mergedAttrs = tNode.mergedAttrs = def.hostAttrs;
 
       if (mergedAttrs !== null) {
-        computeStaticStyling(tNode, mergedAttrs);
+        computeStaticStyling(tNode, mergedAttrs, true);
 
         if (rNode !== null) {
           setUpAttributes(hostRenderer, rNode, mergedAttrs);
@@ -48819,7 +48532,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      */
 
 
-    var VERSION = new Version('9.1.3');
+    var VERSION = new Version('9.1.12');
     /**
      * @fileoverview added by tsickle
      * Generated from: packages/core/src/change_detection/differs/default_iterable_differ.ts
@@ -52366,8 +52079,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         var projectedNodes = view.root.projectableNodes[ngContentIndex];
 
         if (projectedNodes) {
-          for (var _i7 = 0; _i7 < projectedNodes.length; _i7++) {
-            execRenderNodeAction(view, projectedNodes[_i7], action, parentNode, nextSibling, target);
+          for (var _i8 = 0; _i8 < projectedNodes.length; _i8++) {
+            execRenderNodeAction(view, projectedNodes[_i8], action, parentNode, nextSibling, target);
           }
         }
       }
@@ -55481,20 +55194,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
             tElementNode =
             /** @type {?} */
-            getTNode(rootLView[TVIEW], 0);
+            getTNode(rootTView, 0);
 
-            if (projectableNodes) {
-              // projectable nodes can be passed as array of arrays or an array of iterables (ngUpgrade
-              // case). Here we do normalize passed data structure to be an array of arrays to avoid
-              // complex checks down the line.
-              tElementNode.projection = projectableNodes.map(
-              /**
-              * @param {?} nodesforSlot
-              * @return {?}
-              */
-              function (nodesforSlot) {
-                return Array.from(nodesforSlot);
-              });
+            if (projectableNodes !== undefined) {
+              /** @type {?} */
+              var projection = tElementNode.projection = [];
+
+              for (var i = 0; i < this.ngContentSelectors.length; i++) {
+                /** @type {?} */
+                var nodesforSlot = projectableNodes[i]; // Projectable nodes can be passed as array of arrays or an array of iterables (ngUpgrade
+                // case). Here we do normalize passed data structure to be an array of arrays to avoid
+                // complex checks down the line.
+                // We also normalize the length of the passed in projectable nodes (to match the number of
+                // <ng-container> slots defined by a component).
+
+                projection.push(nodesforSlot != null ? Array.from(nodesforSlot) : null);
+              }
             } // TODO: should LifecycleHooksFeature and other host features be generated by the compiler and
             // executed here?
             // Angular 5 reference: https://stackblitz.com/edit/lifecycle-hooks-vcref
@@ -55513,9 +55228,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           if (!rootSelectorOrNode || isIsolated) {
             // The host element of the internal or isolated root view is attached to the component's host
             // view node.
+            ngDevMode && assertNodeOfPossibleTypes(rootTView.node, 2
+            /* View */
+            );
 
             /** @type {?} */
-            componentRef.hostView._tViewNode.child = tElementNode;
+            rootTView.node.child = tElementNode;
           }
 
           return componentRef;
@@ -55590,7 +55308,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _this44.destroyCbs = [];
         _this44.instance = instance;
         _this44.hostView = _this44.changeDetectorRef = new RootViewRef(_rootLView);
-        _this44.hostView._tViewNode = assignTViewNodeToLView(_rootLView[TVIEW], null, -1, _rootLView);
+        assignTViewNodeToLView(_rootLView[TVIEW], null, -1, _rootLView);
         _this44.componentType = componentType;
         return _this44;
       }
@@ -55907,6 +55625,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
+    /** @type {?} */
+
+
+    var pluralMapping = ['zero', 'one', 'two', 'few', 'many'];
     /**
      * Returns the plural case based on the locale
      * @param {?} value
@@ -55914,30 +55636,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      * @return {?}
      */
 
-
     function getPluralCase(value, locale) {
       /** @type {?} */
-      var plural = getLocalePluralCase(locale)(value);
+      var plural = getLocalePluralCase(locale)(parseInt(value, 10));
+      /** @type {?} */
 
-      switch (plural) {
-        case 0:
-          return 'zero';
-
-        case 1:
-          return 'one';
-
-        case 2:
-          return 'two';
-
-        case 3:
-          return 'few';
-
-        case 4:
-          return 'many';
-
-        default:
-          return 'other';
-      }
+      var result = pluralMapping[plural];
+      return result !== undefined ? result : 'other';
     }
     /**
      * The locale id that the application is using by default (for translations and ICU expressions).
@@ -58014,12 +57719,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           nextNode;
         }
 
-        for (var _i8 = 0; _i8 < nestedIcusToCreate.length; _i8++) {
+        for (var _i9 = 0; _i9 < nestedIcusToCreate.length; _i9++) {
           /** @type {?} */
-          var _nestedIcu = nestedIcusToCreate[_i8][0];
+          var _nestedIcu = nestedIcusToCreate[_i9][0];
           /** @type {?} */
 
-          var nestedIcuNodeIndex = nestedIcusToCreate[_i8][1];
+          var nestedIcuNodeIndex = nestedIcusToCreate[_i9][1];
           icuStart(tIcus, _nestedIcu, nestedIcuNodeIndex, expandoStartIndex + icuCase.vars); // Since this is recursive, the last TIcu that was pushed is the one we want
 
           /** @type {?} */
@@ -60558,9 +60263,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             lView[-tNodeIdx];
             ngDevMode && assertLContainer(declarationLContainer); // collect matches for views inserted in this container
 
-            for (var _i9 = CONTAINER_HEADER_OFFSET; _i9 < declarationLContainer.length; _i9++) {
+            for (var _i10 = CONTAINER_HEADER_OFFSET; _i10 < declarationLContainer.length; _i10++) {
               /** @type {?} */
-              var embeddedLView = declarationLContainer[_i9];
+              var embeddedLView = declarationLContainer[_i10];
 
               if (embeddedLView[DECLARATION_LCONTAINER] === embeddedLView[PARENT]) {
                 collectQueryResults(embeddedLView[TVIEW], embeddedLView, childQueryIndex, result);
@@ -60575,9 +60280,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               /** @type {?} */
               declarationLContainer[MOVED_VIEWS];
 
-              for (var _i10 = 0; _i10 < embeddedLViews.length; _i10++) {
+              for (var _i11 = 0; _i11 < embeddedLViews.length; _i11++) {
                 /** @type {?} */
-                var _embeddedLView = embeddedLViews[_i10];
+                var _embeddedLView = embeddedLViews[_i11];
                 collectQueryResults(_embeddedLView[TVIEW], _embeddedLView, childQueryIndex, result);
               }
             }
@@ -60927,10 +60632,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         'ɵɵProvidersFeature': ɵɵProvidersFeature,
         'ɵɵCopyDefinitionFeature': ɵɵCopyDefinitionFeature,
         'ɵɵInheritDefinitionFeature': ɵɵInheritDefinitionFeature,
-        'ɵɵcontainer': ɵɵcontainer,
         'ɵɵnextContext': ɵɵnextContext,
-        'ɵɵcontainerRefreshStart': ɵɵcontainerRefreshStart,
-        'ɵɵcontainerRefreshEnd': ɵɵcontainerRefreshEnd,
         'ɵɵnamespaceHTML': ɵɵnamespaceHTML,
         'ɵɵnamespaceMathML': ɵɵnamespaceMathML,
         'ɵɵnamespaceSVG': ɵɵnamespaceSVG,
@@ -61030,8 +60732,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         'ɵɵtextInterpolate7': ɵɵtextInterpolate7,
         'ɵɵtextInterpolate8': ɵɵtextInterpolate8,
         'ɵɵtextInterpolateV': ɵɵtextInterpolateV,
-        'ɵɵembeddedViewStart': ɵɵembeddedViewStart,
-        'ɵɵembeddedViewEnd': ɵɵembeddedViewEnd,
         'ɵɵi18n': ɵɵi18n,
         'ɵɵi18nAttributes': ɵɵi18nAttributes,
         'ɵɵi18nExp': ɵɵi18nExp,
@@ -67444,9 +67144,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           var eAttrs = element.attributes;
 
-          for (var _i11 = 0; _i11 < eAttrs.length; _i11++) {
+          for (var _i12 = 0; _i12 < eAttrs.length; _i12++) {
             /** @type {?} */
-            var attr = eAttrs[_i11];
+            var attr = eAttrs[_i12];
             /** @type {?} */
 
             var lowercaseName = attr.name.toLowerCase(); // Make sure that we don't assign the same attribute both in its
@@ -68468,12 +68168,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       var outputDefs = [];
 
-      for (var _i12 = 0; _i12 < outputs.length; _i12++) {
-        var _outputs$_i = _slicedToArray(outputs[_i12], 2),
+      for (var _i13 = 0; _i13 < outputs.length; _i13++) {
+        var _outputs$_i = _slicedToArray(outputs[_i13], 2),
             target = _outputs$_i[0],
             eventName = _outputs$_i[1];
 
-        outputDefs[_i12] = {
+        outputDefs[_i13] = {
           type: 0
           /* ElementOutput */
           ,
@@ -69017,20 +68717,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (view.def.nodeFlags & 134217728
       /* TypeViewQuery */
       ) {
-          for (var _i13 = 0; _i13 < view.def.nodes.length; _i13++) {
+          for (var _i14 = 0; _i14 < view.def.nodes.length; _i14++) {
             /** @type {?} */
-            var _nodeDef = view.def.nodes[_i13];
+            var _nodeDef = view.def.nodes[_i14];
 
             if (_nodeDef.flags & 134217728
             /* TypeViewQuery */
             && _nodeDef.flags & 536870912
             /* DynamicQuery */
             ) {
-              asQueryList(view, _i13).setDirty();
+              asQueryList(view, _i14).setDirty();
             } // only visit the root nodes
 
 
-            _i13 += _nodeDef.childCount;
+            _i14 += _nodeDef.childCount;
           }
         }
     }
@@ -69641,10 +69341,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           :
             value = {};
 
-            for (var _i14 = 0; _i14 < values.length; _i14++) {
+            for (var _i15 = 0; _i15 < values.length; _i15++) {
               value[
               /** @type {?} */
-              bindings[_i14].name] = values[_i14];
+              bindings[_i15].name] = values[_i15];
             }
 
             break;
@@ -69849,8 +69549,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         /** @type {?} */
         var value = '';
 
-        for (var _i15 = 0; _i15 < values.length; _i15++) {
-          value = value + _addInterpolationPart(values[_i15], bindings[_i15]);
+        for (var _i16 = 0; _i16 < values.length; _i16++) {
+          value = value + _addInterpolationPart(values[_i16], bindings[_i16]);
         }
 
         value =
@@ -70692,9 +70392,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             var projectedViews = asElementData(view, i).template._projectedViews;
 
             if (projectedViews) {
-              for (var _i16 = 0; _i16 < projectedViews.length; _i16++) {
+              for (var _i17 = 0; _i17 < projectedViews.length; _i17++) {
                 /** @type {?} */
-                var projectedView = projectedViews[_i16];
+                var projectedView = projectedViews[_i17];
                 projectedView.state |= 32
                 /* CheckProjectedView */
                 ;
@@ -71594,9 +71294,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         var lastElementDef = null;
 
-        for (var _i17 = 0; _i17 < def.nodes.length; _i17++) {
+        for (var _i18 = 0; _i18 < def.nodes.length; _i18++) {
           /** @type {?} */
-          var nodeDef = def.nodes[_i17];
+          var nodeDef = def.nodes[_i18];
 
           if (nodeDef.flags & 1
           /* TypeElement */
@@ -71626,9 +71326,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
       function applyProviderOverridesToElement(viewDef, elIndex) {
-        for (var _i18 = elIndex + 1; _i18 < viewDef.nodes.length; _i18++) {
+        for (var _i19 = elIndex + 1; _i19 < viewDef.nodes.length; _i19++) {
           /** @type {?} */
-          var nodeDef = viewDef.nodes[_i18];
+          var nodeDef = viewDef.nodes[_i19];
 
           if (nodeDef.flags & 1
           /* TypeElement */
@@ -73670,7 +73370,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! rxjs/operators */
     "./node_modules/rxjs/_esm2015/operators/index.js");
     /**
-     * @license Angular v9.1.3
+     * @license Angular v9.1.12
      * (c) 2010-2020 Google LLC. https://angular.io/
      * License: MIT
      */
@@ -76799,8 +76499,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "_getOptionId",
         value: function _getOptionId(value) {
-          for (var _i19 = 0, _Array$from = Array.from(this._optionMap.keys()); _i19 < _Array$from.length; _i19++) {
-            var id = _Array$from[_i19];
+          for (var _i20 = 0, _Array$from = Array.from(this._optionMap.keys()); _i20 < _Array$from.length; _i20++) {
+            var id = _Array$from[_i20];
             if (this._compareWith(this._optionMap.get(id), value)) return id;
           }
 
@@ -77312,9 +77012,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 /** @type {?} */
                 _.options;
 
-                for (var _i20 = 0; _i20 < _options2.length; _i20++) {
+                for (var _i21 = 0; _i21 < _options2.length; _i21++) {
                   /** @type {?} */
-                  var _opt = _options2.item(_i20);
+                  var _opt = _options2.item(_i21);
 
                   if (_opt.selected) {
                     /** @type {?} */
@@ -77379,8 +77079,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "_getOptionId",
         value: function _getOptionId(value) {
-          for (var _i21 = 0, _Array$from2 = Array.from(this._optionMap.keys()); _i21 < _Array$from2.length; _i21++) {
-            var id = _Array$from2[_i21];
+          for (var _i22 = 0, _Array$from2 = Array.from(this._optionMap.keys()); _i22 < _Array$from2.length; _i22++) {
+            var id = _Array$from2[_i22];
             if (this._compareWith(
             /** @type {?} */
             this._optionMap.get(id)._value, value)) return id;
@@ -80311,8 +80011,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "_allControlsDisabled",
         value: function _allControlsDisabled() {
-          for (var _i22 = 0, _Object$keys2 = Object.keys(this.controls); _i22 < _Object$keys2.length; _i22++) {
-            var controlName = _Object$keys2[_i22];
+          for (var _i23 = 0, _Object$keys2 = Object.keys(this.controls); _i23 < _Object$keys2.length; _i23++) {
+            var controlName = _Object$keys2[_i23];
 
             if (this.controls[controlName].enabled) {
               return false;
@@ -84442,7 +84142,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      * async validator directive with a custom error key.
      *
      * ```typescript
-     * import { of as observableOf } from 'rxjs';
+     * import { of } from 'rxjs';
      *
      * \@Directive({
      *   selector: '[customAsyncValidator]',
@@ -84451,7 +84151,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      * })
      * class CustomAsyncValidatorDirective implements AsyncValidator {
      *   validate(control: AbstractControl): Observable<ValidationErrors|null> {
-     *     return observableOf({'custom': true});
+     *     return of({'custom': true});
      *   }
      * }
      * ```
@@ -85586,7 +85286,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      */
 
 
-    var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('9.1.3');
+    var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('9.1.12');
     /**
      * @fileoverview added by tsickle
      * Generated from: packages/forms/src/form_providers.ts
@@ -86098,7 +85798,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return _angular_common__WEBPACK_IMPORTED_MODULE_0__["ɵgetDOM"];
     });
     /**
-     * @license Angular v9.1.3
+     * @license Angular v9.1.12
      * (c) 2010-2020 Google LLC. https://angular.io/
      * License: MIT
      */
@@ -90616,7 +90316,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      */
 
 
-    var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('9.1.3');
+    var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('9.1.12');
     /**
      * @fileoverview added by tsickle
      * Generated from: packages/platform-browser/src/platform-browser.ts
@@ -91071,7 +90771,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! rxjs/operators */
     "./node_modules/rxjs/_esm2015/operators/index.js");
     /**
-     * @license Angular v9.1.3
+     * @license Angular v9.1.12
      * (c) 2010-2020 Google LLC. https://angular.io/
      * License: MIT
      */
@@ -91100,8 +90800,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      * class MyService {
      *   constructor(public router: Router, logger: Logger) {
      *     router.events.pipe(
-     *       filter(e => e instanceof RouterEvent)
-     *     ).subscribe(e => {
+     *        filter((e: Event): e is RouterEvent => e instanceof RouterEvent)
+     *     ).subscribe((e: RouterEvent) => {
      *       logger.log(e.id, e.url);
      *     });
      *   }
@@ -100387,7 +100087,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       }
       /**
-       * @param {?} commands
+       * @see {\@link Router#createUrlTree Router#createUrlTree}
+       * @param {?} commands An array of commands to pass to {\@link Router#createUrlTree
+       *     Router#createUrlTree}.
+       *   - **array**: commands to pass to {\@link Router#createUrlTree Router#createUrlTree}.
+       *   - **string**: shorthand for array of commands with just the string, i.e. `['/route']`
+       *   - **null|undefined**: shorthand for an empty array of commands, i.e. `[]`
        * @return {?}
        */
 
@@ -100422,7 +100127,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
         }
         /**
-         * @deprecated 4.0.0 use `queryParamsHandling` instead.
+         * @deprecated As of Angular v4.0 use `queryParamsHandling` instead.
          * @param {?} value
          * @return {?}
          */
@@ -100636,7 +100341,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         });
       }
       /**
-       * @param {?} commands
+       * @see {\@link Router#createUrlTree Router#createUrlTree}
+       * @param {?} commands An array of commands to pass to {\@link Router#createUrlTree
+       *     Router#createUrlTree}.
+       *   - **array**: commands to pass to {\@link Router#createUrlTree Router#createUrlTree}.
+       *   - **string**: shorthand for array of commands with just the string, i.e. `['/route']`
+       *   - **null|undefined**: shorthand for an empty array of commands, i.e. `[]`
        * @return {?}
        */
 
@@ -100713,6 +100423,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }
         }
         /**
+         * @deprecated As of Angular v4.0 use `queryParamsHandling` instead.
          * @param {?} value
          * @return {?}
          */
@@ -102884,7 +102595,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
      */
 
 
-    var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('9.1.3');
+    var VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["Version"]('9.1.12');
     /**
      * @fileoverview added by tsickle
      * Generated from: packages/router/src/private_export.ts
@@ -104446,8 +104157,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               subscriber.next(_events[i]);
             }
           } else {
-            for (var _i23 = 0; _i23 < len && !subscriber.closed; _i23++) {
-              subscriber.next(_events[_i23].value);
+            for (var _i24 = 0; _i24 < len && !subscriber.closed; _i24++) {
+              subscriber.next(_events[_i24].value);
             }
           }
 
@@ -108449,8 +108160,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var shouldComplete = false;
           var args = [];
 
-          for (var _i24 = 0; _i24 < len; _i24++) {
-            var _iterator20 = iterators[_i24];
+          for (var _i25 = 0; _i25 < len; _i25++) {
+            var _iterator20 = iterators[_i25];
 
             var result = _iterator20.next();
 
@@ -119337,10 +119048,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _this248.toRespond.push(i);
         }
 
-        for (var _i25 = 0; _i25 < len; _i25++) {
-          var observable = observables[_i25];
+        for (var _i26 = 0; _i26 < len; _i26++) {
+          var observable = observables[_i26];
 
-          _this248.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_1__["subscribeToResult"])(_assertThisInitialized(_this248), observable, observable, _i25));
+          _this248.add(Object(_util_subscribeToResult__WEBPACK_IMPORTED_MODULE_1__["subscribeToResult"])(_assertThisInitialized(_this248), observable, observable, _i26));
         }
 
         return _this248;
