@@ -317,7 +317,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h2 class=\"text-muted mb-4\">Ambulances</h2>\n\n  <div class=\"row mb-4\">\n    <div class=\"col-md-12\">\n      <div class=\"card border-0 rounded-0\">\n        <div class=\"card-title mb-1 p-3\">\n          Tap the three dot icon on top right of the browser and click\n          <u>Find in page</u> <br />\n          or use <u>ctrl+f</u>\n\n          <h5></h5>\n        </div>\n\n        <div class=\"card-body\">\n          <div class=\"center\">\n            <iframe\n              width=\"100%\"\n              height=\"100%\"\n              src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQjjlylXYLQK3oAQHwx9LmHQjqvQhMwSdSk6KT2FfQRuTuKwTZ_rqgYKheTjlla4AhyBskdu9qOk7we/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false\"\n              scrolling=\"no\"\n              height=\"500\"\n              frameborder=\"0\"\n              marginheight=\"0\"\n              marginwidth=\"0\"\n            >\n            </iframe>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<script>\n  function search() {\n    var name = document.getElementById(\"searchForm\").elements[\"searchItem\"]\n      .value;\n    var pattern = name.toLowerCase();\n    var targetId = \"\";\n\n    var divs = document.getElementsByClassName(\"col-md-2\");\n    for (var i = 0; i < divs.length; i++) {\n      var para = divs[i].getElementsByTagName(\"p\");\n      var index = para[0].innerText.toLowerCase().indexOf(pattern);\n      if (index != -1) {\n        targetId = divs[i].parentNode.id;\n        document.getElementById(targetId).scrollIntoView();\n        break;\n      }\n    }\n  }\n</script>\n"
+module.exports = "<div>\n  <h2 class=\"text-muted mb-4\">Ambulances</h2>\n\n  <div class=\"row mb-4\">\n    <div class=\"col-md-12\">\n      <div class=\"card border-0 rounded-0\">\n        <div class=\"card-title mb-1 p-3\">\n          <h5></h5>\n        </div>\n\n        <div class=\"card-body\">\n          <div class=\"center\">\n            <iframe\n              width=\"100%\"\n              height=\"100%\"\n              src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTlMFPQe1OgGoUz4_bSo4IcDcC_4_8eoHi0sTnrk_Xz0Ze1r1tJXXNctGVm3pgExdhIw67KUhv-0Lp5/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false\"\n              scrolling=\"no\"\n              height=\"500\"\n              frameborder=\"0\"\n              marginheight=\"0\"\n              marginwidth=\"0\"\n            >\n            </iframe>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<script>\n  function search() {\n    var name = document.getElementById(\"searchForm\").elements[\"searchItem\"]\n      .value;\n    var pattern = name.toLowerCase();\n    var targetId = \"\";\n\n    var divs = document.getElementsByClassName(\"col-md-2\");\n    for (var i = 0; i < divs.length; i++) {\n      var para = divs[i].getElementsByTagName(\"p\");\n      var index = para[0].innerText.toLowerCase().indexOf(pattern);\n      if (index != -1) {\n        targetId = divs[i].parentNode.id;\n        document.getElementById(targetId).scrollIntoView();\n        break;\n      }\n    }\n  }\n</script>\n"
 
 /***/ }),
 
@@ -397,6 +397,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _beds_beds_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./beds/beds.component */ "./src/app/beds/beds.component.ts");
 /* harmony import */ var _ambulance_ambulance_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ambulance/ambulance.component */ "./src/app/ambulance/ambulance.component.ts");
 /* harmony import */ var _vols_vols_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./vols/vols.component */ "./src/app/vols/vols.component.ts");
+/* harmony import */ var _donate_donate_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./donate/donate.component */ "./src/app/donate/donate.component.ts");
+
 
 
 
@@ -426,6 +428,7 @@ var routes = [
     { path: "beds", component: _beds_beds_component__WEBPACK_IMPORTED_MODULE_10__["BedsComponent"] },
     { path: "ambu", component: _ambulance_ambulance_component__WEBPACK_IMPORTED_MODULE_11__["AmbulanceComponent"] },
     { path: "volunteers", component: _vols_vols_component__WEBPACK_IMPORTED_MODULE_12__["VolsComponent"] },
+    { path: "donate", component: _donate_donate_component__WEBPACK_IMPORTED_MODULE_13__["DonateComponent"] },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -547,6 +550,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _beds_beds_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./beds/beds.component */ "./src/app/beds/beds.component.ts");
 /* harmony import */ var _ambulance_ambulance_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./ambulance/ambulance.component */ "./src/app/ambulance/ambulance.component.ts");
 /* harmony import */ var _vols_vols_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./vols/vols.component */ "./src/app/vols/vols.component.ts");
+/* harmony import */ var _donate_donate_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./donate/donate.component */ "./src/app/donate/donate.component.ts");
+
 
 
 
@@ -596,7 +601,8 @@ var AppModule = /** @class */ (function () {
                 _oxygen_oxygen_component__WEBPACK_IMPORTED_MODULE_22__["OxygenComponent"],
                 _beds_beds_component__WEBPACK_IMPORTED_MODULE_23__["BedsComponent"],
                 _ambulance_ambulance_component__WEBPACK_IMPORTED_MODULE_24__["AmbulanceComponent"],
-                _vols_vols_component__WEBPACK_IMPORTED_MODULE_25__["VolsComponent"]
+                _vols_vols_component__WEBPACK_IMPORTED_MODULE_25__["VolsComponent"],
+                _donate_donate_component__WEBPACK_IMPORTED_MODULE_26__["DonateComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -624,7 +630,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h2 class=\"text-muted mb-4\">Beds</h2>\n\n  <div class=\"row mb-4\">\n    <div class=\"col-md-12\">\n      <div class=\"card border-0 rounded-0\">\n        <div></div>\n        <div class=\"card-body\">\n          <div class=\"center\">\n            <iframe\n              width=\"100%\"\n              height=\"100%\"\n              src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQjjlylXYLQK3oAQHwx9LmHQjqvQhMwSdSk6KT2FfQRuTuKwTZ_rqgYKheTjlla4AhyBskdu9qOk7we/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false\"\n              scrolling=\"no\"\n              height=\"500\"\n              frameborder=\"0\"\n              marginheight=\"0\"\n              marginwidth=\"0\"\n            >\n            </iframe>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div>\n  <h2 class=\"text-muted mb-4\">Beds</h2>\n\n  <div class=\"row mb-4\">\n    <div class=\"col-md-12\">\n      <div class=\"card border-0 rounded-0\">\n        <div></div>\n        <div class=\"card-body\">\n          <div class=\"center\">\n            <iframe\n              width=\"100%\"\n              height=\"100%\"\n              src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vTq0_7uRLTe6POf1iPbAxDPap6Ag3mziXSz9o3Gkqfi9qSlOK7nNsH9_HoOkm8kBr9sHGiKGAGWlOXE/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false\"\n              scrolling=\"no\"\n              height=\"500\"\n              frameborder=\"0\"\n              marginheight=\"0\"\n              marginwidth=\"0\"\n            >\n            </iframe>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -917,7 +923,7 @@ var Cls12Component = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"row pt-4\">\r\n    <div class=\"col-md-12 text-center mb-2\">\r\n      <small>\r\n        © 2021 made with\r\n        <i class=\"fa fa-heart text-danger\" aria-hidden=\"true\"></i> by\r\n        <span class=\"text-secondary font-weight-bold\"\r\n          >Soham Banerjee</span\r\n        ></small\r\n      >\r\n    </div>\r\n    <div class=\"col-md-12 text-center mb-3\">\r\n      <a\r\n        href=\"\"\r\n        target=\"_blank\"\r\n        class=\"btn btn-sm bg-light text-dark shadow-sm rounded-circle text-light m-2\"\r\n        ><i class=\"fab fa-github\"></i\r\n      ></a>\r\n      <a\r\n        href=\"\"\r\n        target=\"_blank\"\r\n        class=\"btn btn-sm bg-light text-dark shadow-sm rounded-circle text-light m-2\"\r\n        ><i class=\"fab fa-twitter\"></i\r\n      ></a>\r\n      <a\r\n        href=\"\"\r\n        target=\"_blank\"\r\n        class=\"btn btn-sm bg-light text-dark shadow-sm rounded-circle text-light m-2\"\r\n        ><i class=\"fab fa-instagram\"></i\r\n      ></a>\r\n      <a\r\n        href=\"\"\r\n        target=\"_blank\"\r\n        class=\"btn btn-sm bg-light text-dark shadow-sm rounded-circle text-light m-2\"\r\n        ><i class=\"fab fa-linkedin-in\"></i\r\n      ></a>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"row pt-4\">\r\n    <div class=\"col-md-12 text-center mb-2\">\r\n      <small>\r\n        © 2021 made with\r\n        <i class=\"fa fa-heart text-danger\" aria-hidden=\"true\"></i> by\r\n        <span class=\"text-secondary font-weight-bold\"\r\n          >Soham Banerjee <br />\r\n          Maintained by: Swarnava Bhattacharjee, Soumya Biswas and Sayan Podder\r\n        </span></small\r\n      >\r\n    </div>\r\n    <div class=\"col-md-12 text-center mb-3\">\r\n      <a\r\n        href=\"https://github.com/soham4abc\"\r\n        target=\"_blank\"\r\n        class=\"btn btn-sm bg-light text-dark shadow-sm rounded-circle text-light m-2\"\r\n        ><i class=\"fab fa-github\"></i\r\n      ></a>\r\n\r\n      <a\r\n        href=\"https://www.facebook.com/RedVolunteersWB\"\r\n        target=\"_blank\"\r\n        class=\"btn btn-sm bg-light text-dark shadow-sm rounded-circle text-light m-2\"\r\n        ><i class=\"fab fa-facebook\"></i\r\n      ></a>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -973,7 +979,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-md fixed-top navbar-dark flex-fill\">\r\n  <!-- <button class=\"sidebar-toggler ml-4\" type=\"button\">\r\n    <i class=\"fa fa-navicon\"></i>\r\n  </button> -->\r\n  <!-- header -->\r\n  <div class=\"navbar-header pl-2 pr-2 ml-3 text-center\">\r\n    <a class=\"navbar-brand m-0 w-100\" href=\"#\">\r\n      <!-- <i class=\"fa fa-flash mr-1\"></i> -->\r\n      <img src=\"./assets/img/logo.png\" alt=\"lightning logo\" width=\"70px\" />\r\n      <span class=\"ml-1\">CovidResources</span>\r\n    </a>\r\n  </div>\r\n  <!-- sidebar toggler -->\r\n  <div class=\"sidebar-toggler ml-auto mr-3\">\r\n    <a class=\"btn nav-link\" (click)=\"toggleSidebar()\"\r\n      ><i class=\"fa fa-bars\"></i\r\n    ></a>\r\n  </div>\r\n  <!-- right menu toggler -->\r\n  <div class=\"nav-toggler-right mr-4 d-md-none\">\r\n    <button\r\n      class=\"\"\r\n      type=\"button\"\r\n      (click)=\"isCollapsed = !isCollapsed\"\r\n      [attr.aria-expanded]=\"!isCollapsed\"\r\n      aria-controls=\"collapseBasic\"\r\n    >\r\n      <!-- <span class=\"navbar-toggler-icon\"></span> -->\r\n      <img src=\"./assets/img/user.jpg\" class=\"img-fluid\" alt=\"\" />\r\n    </button>\r\n    <span class=\"user-profile nav-alert bg-danger\"></span>\r\n  </div>\r\n  <!-- left box -->\r\n  <ul class=\"navbar-nav flex-fill mt-1 align-items-center left-nav\">\r\n    <li class=\"nav-item navicon\">\r\n      <a class=\"btn nav-link\" (click)=\"toggleSidebarPin()\"\r\n        ><i class=\"fa fa-bars\"></i\r\n      ></a>\r\n    </li>\r\n\r\n    <!-- <li class=\"nav-item flex-fill\">\r\n      <input class=\"form-control navbar-search\" type=\"text\" placeholder=\"Search . . .\">\r\n    </li> -->\r\n  </ul>\r\n\r\n  <!-- right menu -->\r\n  <div\r\n    class=\"collapse navbar-collapse right-nav\"\r\n    id=\"collapseBasic\"\r\n    [collapse]=\"isCollapsed\"\r\n  >\r\n    <ul class=\"navbar-nav\">\r\n      <li class=\"nav-item\">\r\n        <a class=\"btn nav-link\">\r\n          <i class=\"far fa-bell\"></i>\r\n          <span class=\"link-text\">Alerts</span>\r\n          <!-- <span class=\"badge badge-pill ba dge-danger\">3</span> -->\r\n          <span class=\"nav-alert notifications\"></span>\r\n        </a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"btn nav-link\">\r\n          <i class=\"far fa-envelope\"></i>\r\n          <span class=\"link-text\">Messages</span>\r\n          <!-- <span class=\"badge badge-pill badge-success\">5</span> -->\r\n          <span class=\"nav-alert messages\"></span>\r\n        </a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"btn nav-link\">\r\n          <i class=\"far fa-user\"></i>\r\n          <span class=\"link-text\">Profile</span>\r\n        </a>\r\n      </li>\r\n      <li class=\"nav-item\">\r\n        <a class=\"btn nav-link\">\r\n          <i class=\"fas fa-cog\"></i>\r\n          <span class=\"link-text\">Setting</span>\r\n        </a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-md fixed-top navbar-dark flex-fill\">\r\n  <!-- <button class=\"sidebar-toggler ml-4\" type=\"button\">\r\n    <i class=\"fa fa-navicon\"></i>\r\n  </button> -->\r\n  <!-- header -->\r\n  <div class=\"navbar-header pl-2 pr-2 ml-3 text-center\">\r\n    <a class=\"navbar-brand m-0 w-100\" href=\"#\">\r\n      <!-- <i class=\"fa fa-flash mr-1\"></i> -->\r\n      <img src=\"./assets/img/sickle.jpg\" alt=\"lightning logo\" width=\"70px\" />\r\n      <span class=\"ml-1\">CovidResources</span>\r\n    </a>\r\n  </div>\r\n  <!-- sidebar toggler -->\r\n  <div class=\"sidebar-toggler ml-auto mr-3\">\r\n    <a class=\"btn nav-link\" (click)=\"toggleSidebar()\"\r\n      ><i class=\"fa fa-bars\"></i\r\n    ></a>\r\n  </div>\r\n  <!-- right menu toggler -->\r\n  <div class=\"nav-toggler-right mr-4 d-md-none\">\r\n    <button\r\n      class=\"\"\r\n      type=\"button\"\r\n      (click)=\"isCollapsed = !isCollapsed\"\r\n      [attr.aria-expanded]=\"!isCollapsed\"\r\n      aria-controls=\"collapseBasic\"\r\n    >\r\n      <!-- <span class=\"navbar-toggler-icon\"></span> -->\r\n      <img src=\"./assets/img/user.jpg\" class=\"img-fluid\" alt=\"\" />\r\n    </button>\r\n    <span class=\"user-profile nav-alert bg-danger\"></span>\r\n  </div>\r\n  <!-- left box -->\r\n  <ul class=\"navbar-nav flex-fill mt-1 align-items-center left-nav\">\r\n    <li class=\"nav-item navicon\">\r\n      <a class=\"btn nav-link\" (click)=\"toggleSidebarPin()\"\r\n        ><i class=\"fa fa-bars\"></i\r\n      ></a>\r\n    </li>\r\n\r\n    <!-- <li class=\"nav-item flex-fill\">\r\n      <input class=\"form-control navbar-search\" type=\"text\" placeholder=\"Search . . .\">\r\n    </li> -->\r\n  </ul>\r\n\r\n  <!-- right menu -->\r\n  <div\r\n    class=\"collapse navbar-collapse right-nav\"\r\n    id=\"collapseBasic\"\r\n    [collapse]=\"isCollapsed\"\r\n  >\r\n    <ul class=\"navbar-nav\">\r\n      <li class=\"nav-item\">\r\n        <a href=\"https://www.facebook.com/groups/824867847643524\">\r\n          <a class=\"btn nav-link\">\r\n            <i class=\"far fa-user\"></i>\r\n            <span class=\"link-text\">Profile</span>\r\n          </a>\r\n        </a>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -1038,7 +1044,7 @@ var NavbarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<aside class=\"sidebar shadow-sm\">\n  <div\n    class=\"sidebar-profile d-flex flex-column justify-content-center pt-5 pb-3\"\n  >\n    <div class=\"picture-wrapper mb-4\">\n      <div class=\"user-picture m-auto\">\n        <img src=\"./assets/img/user.jpg\" class=\"img-fluid\" alt=\"\" />\n      </div>\n    </div>\n    <div class=\"profile-details text-center pb-4\">\n      <p class=\"mb-0 text-uppercase name\">Red Volunteers</p>\n      <small class=\"text-uppercase role\">Covid-19 Resources</small>\n    </div>\n  </div>\n  <div class=\"sidebar-search pt-1 pb-1 pl-3 pr-3\">\n    <input\n      type=\"search\"\n      class=\"form-control rounded-pill\"\n      name=\"search\"\n      placeholder=\"Search ...\"\n    />\n  </div>\n  <nav class=\"sidebar-menu pt-3 pb-3\">\n    <div class=\"menu-header mt-3 mb-2\">Components</div>\n    <ul class=\"menu-items\">\n      <li>\n        <a href=\"#\" routerLink=\"/dashboard\" routerLinkActive=\"active\">\n          <i class=\"fa fa-tv\"></i>\n          <span>Home</span>\n          <span class=\"badge badge-warning rounded-0 text-dark p-1\">NEW</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/oxygen\" routerLinkActive=\"active\">\n          <i class=\"fas fa-gem\"></i>\n          <span>Oxygen</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/beds\" routerLinkActive=\"active\">\n          <i class=\"fa fa-table\"></i>\n          <span>Covid-19 Beds</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/ambu\" routerLinkActive=\"active\">\n          <i class=\"fa fa-align-center\"></i>\n          <span>Ambulances</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/volunteers\" routerLinkActive=\"active\">\n          <i class=\"fa fa-align-center\"></i>\n          <span>Volunteers</span>\n        </a>\n      </li>\n\n      <li>\n        <a href=\"#\" routerLink=\"/notifications\" routerLinkActive=\"active\">\n          <i class=\"fas fa-bell\"></i>\n          <span>Notifications</span>\n        </a>\n      </li>\n    </ul>\n  </nav>\n</aside>\n"
+module.exports = "<aside class=\"sidebar shadow-sm\">\n  <div\n    class=\"sidebar-profile d-flex flex-column justify-content-center pt-5 pb-3\"\n  >\n    <div class=\"picture-wrapper mb-4\">\n      <div class=\"user-picture m-auto\">\n        <img src=\"./assets/img/user.jpg\" class=\"img-fluid\" alt=\"\" />\n      </div>\n    </div>\n    <div class=\"profile-details text-center pb-4\">\n      <p class=\"mb-0 text-uppercase name\">Red Volunteers</p>\n      <small class=\"text-uppercase role\">Covid-19 Resources</small>\n    </div>\n  </div>\n  <div class=\"sidebar-search pt-1 pb-1 pl-3 pr-3\">\n    <input\n      type=\"search\"\n      class=\"form-control rounded-pill\"\n      name=\"search\"\n      placeholder=\"Search ...\"\n    />\n  </div>\n  <nav class=\"sidebar-menu pt-3 pb-3\">\n    <div class=\"menu-header mt-3 mb-2\">Components</div>\n    <ul class=\"menu-items\">\n      <li>\n        <a href=\"#\" routerLink=\"/dashboard\" routerLinkActive=\"active\">\n          <i class=\"fa fa-tv\"></i>\n          <span>Home</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/oxygen\" routerLinkActive=\"active\">\n          <i class=\"fa fa-cloud\"></i>\n          <span>Oxygen</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/beds\" routerLinkActive=\"active\">\n          <i class=\"fa fa-bed\"></i>\n          <span>Covid-19 Beds</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/ambu\" routerLinkActive=\"active\">\n          <i class=\"fa fa-car\"></i>\n          <span>Ambulances</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/volunteers\" routerLinkActive=\"active\">\n          <i class=\"fa fa-align-center\"></i>\n          <span>Volunteers</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/donate\" routerLinkActive=\"active\">\n          <i class=\"fas fa-bell\"></i>\n          <span>Donate Us!!</span>\n        </a>\n      </li>\n    </ul>\n  </nav>\n</aside>\n"
 
 /***/ }),
 
@@ -1081,6 +1087,62 @@ var SidebarComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], SidebarComponent);
     return SidebarComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/donate/donate.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/donate/donate.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<img src=\"../assets/img/donate.jpg\" alt=\"Nature\" class=\"responsive\" />\n"
+
+/***/ }),
+
+/***/ "./src/app/donate/donate.component.scss":
+/*!**********************************************!*\
+  !*** ./src/app/donate/donate.component.scss ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".responsive {\n  width: 100%;\n  height: auto; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZG9uYXRlL0U6XFxjb2RlXFxSRURaXFxjb3ZpZDE5L3NyY1xcYXBwXFxkb25hdGVcXGRvbmF0ZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9kb25hdGUvZG9uYXRlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnJlc3BvbnNpdmUge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogYXV0bztcclxufVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/donate/donate.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/donate/donate.component.ts ***!
+  \********************************************/
+/*! exports provided: DonateComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DonateComponent", function() { return DonateComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var DonateComponent = /** @class */ (function () {
+    function DonateComponent() {
+    }
+    DonateComponent.prototype.ngOnInit = function () {
+    };
+    DonateComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-donate',
+            template: __webpack_require__(/*! ./donate.component.html */ "./src/app/donate/donate.component.html"),
+            styles: [__webpack_require__(/*! ./donate.component.scss */ "./src/app/donate/donate.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], DonateComponent);
+    return DonateComponent;
 }());
 
 
@@ -1170,7 +1232,7 @@ var JeeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h2 class=\"text-muted mb-4\">Oxygen Leads</h2>\n\n  <div class=\"row mb-4\">\n    <div class=\"col-md-12\">\n      <div class=\"card border-0 rounded-0\">\n        <div class=\"card-title mb-1 p-3\">\n          <h5></h5>\n        </div>\n        <div class=\"card-body\">\n          <div class=\"center\">\n            <iframe\n              width=\"100%\"\n              height=\"100%\"\n              src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQjjlylXYLQK3oAQHwx9LmHQjqvQhMwSdSk6KT2FfQRuTuKwTZ_rqgYKheTjlla4AhyBskdu9qOk7we/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false\"\n              scrolling=\"no\"\n              height=\"500\"\n              frameborder=\"0\"\n              marginheight=\"0\"\n              marginwidth=\"0\"\n            >\n            </iframe>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div>\n  <h2 class=\"text-muted mb-4\">Oxygen Leads</h2>\n\n  <div class=\"row mb-4\">\n    <div class=\"col-md-12\">\n      <div class=\"card border-0 rounded-0\">\n        <div class=\"card-title mb-1 p-3\">\n          <h5></h5>\n        </div>\n        <div class=\"card-body\">\n          <div class=\"center\">\n            <iframe\n              width=\"100%\"\n              height=\"100%\"\n              src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQDVdVHTv2syqV4yDdJpHdcy0I1i16_ayrec1PNzDVtxhWr10zQE5gdW5dfbJhSZ75OzcdTLLyq6ui5/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false\"\n              scrolling=\"no\"\n              height=\"500\"\n              frameborder=\"0\"\n              marginheight=\"0\"\n              marginwidth=\"0\"\n            >\n            </iframe>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1226,7 +1288,7 @@ var OxygenComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <h4 class=\"mb-4 text-muted\"></h4>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6 col-lg-3 mb-4\">\r\n      <div class=\"card border-0 rounded-0\">\r\n        <div class=\"card-body\">\r\n          <div class=\"card-innerBody d-flex align-items-center\">\r\n            <div class=\"card-icon text-light\">\r\n              <i class=\"fa fa-cloud\" aria-hidden=\"true\"></i>\r\n            </div>\r\n            <div class=\"ml-auto\">\r\n              <p class=\"card-label text-right text-muted\"></p>\r\n              <h4 class=\"card-text text-right\">Oxygen Supply Leads!</h4>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-footer d-flex\">\r\n          <button\r\n            type=\"button\"\r\n            class=\"btn btn-outline-info m-1 flex-fill rounded-0\"\r\n            (click)=\"oxygen()\"\r\n          >\r\n            Click Here!!\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"col-md-6 col-lg-3 mb-4\">\r\n      <div class=\"card border-0 rounded-0\">\r\n        <div class=\"card-body\">\r\n          <div class=\"card-innerBody d-flex align-items-center\">\r\n            <div class=\"card-icon text-light\">\r\n              <i class=\"fa fa-bed\" aria-hidden=\"true\"></i>\r\n            </div>\r\n            <div class=\"ml-auto\">\r\n              <p class=\"card-label text-right text-muted\"></p>\r\n              <h4 class=\"card-text text-right\">Covid-19 Hospital beds!</h4>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-footer d-flex\">\r\n          <button\r\n            type=\"button\"\r\n            class=\"btn btn-outline-info m-1 flex-fill rounded-0\"\r\n            (click)=\"beds()\"\r\n          >\r\n            Click Here!!\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-6 col-lg-3 mb-4\">\r\n      <div class=\"card border-0 rounded-0\">\r\n        <div class=\"card-body\">\r\n          <div class=\"card-innerBody d-flex align-items-center\">\r\n            <div class=\"card-icon text-light\">\r\n              <i class=\"fa fa-car\" aria-hidden=\"true\"></i>\r\n            </div>\r\n            <div class=\"ml-auto\">\r\n              <p class=\"card-label text-right text-muted\"></p>\r\n              <h4 class=\"card-text text-right\">Ambulances!</h4>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-footer d-flex\">\r\n          <button\r\n            type=\"button\"\r\n            class=\"btn btn-outline-info m-1 flex-fill rounded-0\"\r\n            (click)=\"ambulance()\"\r\n          >\r\n            Click Here!!\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"video-container\">\r\n      <iframe\r\n        width=\"916\"\r\n        height=\"515\"\r\n        src=\"https://www.youtube.com/embed/M_Ld8JGv56E\"\r\n        title=\"YouTube video player\"\r\n        frameborder=\"0\"\r\n        allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\r\n        allowfullscreen\r\n      ></iframe>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div>\r\n  <h4 class=\"mb-4 text-muted\"></h4>\r\n\r\n  <div class=\"row\">\r\n    <a class=\"navbar-brand m-0 w-100\" href=\"#\">\r\n      <!-- <i class=\"fa fa-flash mr-1\"></i> -->\r\n\r\n      <h4><span class=\"ml-1\" style=\"color: crimson\">CovidResources</span></h4>\r\n    </a>\r\n    <div class=\"col-md-6 col-lg-3 mb-4\">\r\n      <div class=\"card border-0 rounded-0\">\r\n        <div class=\"card-body\">\r\n          <div class=\"card-innerBody d-flex align-items-center\">\r\n            <div class=\"card-icon text-light\">\r\n              <i class=\"fa fa-cloud\" aria-hidden=\"true\"></i>\r\n            </div>\r\n            <div class=\"ml-auto\">\r\n              <p class=\"card-label text-right text-muted\"></p>\r\n              <h4 class=\"card-text text-right\">Oxygen Supply Leads!</h4>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-footer d-flex\">\r\n          <button\r\n            type=\"button\"\r\n            class=\"btn btn-outline-info m-1 flex-fill rounded-0\"\r\n            (click)=\"oxygen()\"\r\n          >\r\n            Click Here!!\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"col-md-6 col-lg-3 mb-4\">\r\n      <div class=\"card border-0 rounded-0\">\r\n        <div class=\"card-body\">\r\n          <div class=\"card-innerBody d-flex align-items-center\">\r\n            <div class=\"card-icon text-light\">\r\n              <i class=\"fa fa-bed\" aria-hidden=\"true\"></i>\r\n            </div>\r\n            <div class=\"ml-auto\">\r\n              <p class=\"card-label text-right text-muted\"></p>\r\n              <h4 class=\"card-text text-right\">Covid-19 Hospital beds!</h4>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-footer d-flex\">\r\n          <button\r\n            type=\"button\"\r\n            class=\"btn btn-outline-info m-1 flex-fill rounded-0\"\r\n            (click)=\"beds()\"\r\n          >\r\n            Click Here!!\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-6 col-lg-3 mb-4\">\r\n      <div class=\"card border-0 rounded-0\">\r\n        <div class=\"card-body\">\r\n          <div class=\"card-innerBody d-flex align-items-center\">\r\n            <div class=\"card-icon text-light\">\r\n              <i class=\"fa fa-car\" aria-hidden=\"true\"></i>\r\n            </div>\r\n            <div class=\"ml-auto\">\r\n              <p class=\"card-label text-right text-muted\"></p>\r\n              <h4 class=\"card-text text-right\">Ambulances!</h4>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"card-footer d-flex\">\r\n          <button\r\n            type=\"button\"\r\n            class=\"btn btn-outline-info m-1 flex-fill rounded-0\"\r\n            (click)=\"ambulance()\"\r\n          >\r\n            Click Here!!\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"row\">\r\n    <div class=\"video-container\">\r\n      <iframe\r\n        width=\"916\"\r\n        height=\"515\"\r\n        src=\"https://www.youtube.com/embed/M_Ld8JGv56E\"\r\n        title=\"YouTube video player\"\r\n        frameborder=\"0\"\r\n        allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\r\n        allowfullscreen\r\n      ></iframe>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -1782,7 +1844,7 @@ var AppService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  vols works!\n</p>\n"
+module.exports = "<div>\n  <h2 class=\"text-muted mb-4\">Red Volunteers</h2>\n\n  <div class=\"row mb-4\">\n    <div class=\"col-md-12\">\n      <div class=\"card border-0 rounded-0\">\n        <div class=\"card-title mb-1 p-3\">\n          <h5></h5>\n        </div>\n\n        <div class=\"card-body\">\n          <div class=\"center\">\n            <iframe\n              width=\"100%\"\n              height=\"100%\"\n              src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vRW7ld5LfSZvcMwHjXCJeU-UAViSimddbcbvkFg7UR9yqaJSrpOe5U2sfpX7un6wV8OIIOoi6OKIyvE/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false\"\n              scrolling=\"no\"\n              height=\"500\"\n              frameborder=\"0\"\n              marginheight=\"0\"\n              marginwidth=\"0\"\n            >\n            </iframe>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<script>\n  function search() {\n    var name = document.getElementById(\"searchForm\").elements[\"searchItem\"]\n      .value;\n    var pattern = name.toLowerCase();\n    var targetId = \"\";\n\n    var divs = document.getElementsByClassName(\"col-md-2\");\n    for (var i = 0; i < divs.length; i++) {\n      var para = divs[i].getElementsByTagName(\"p\");\n      var index = para[0].innerText.toLowerCase().indexOf(pattern);\n      if (index != -1) {\n        targetId = divs[i].parentNode.id;\n        document.getElementById(targetId).scrollIntoView();\n        break;\n      }\n    }\n  }\n</script>\n"
 
 /***/ }),
 
