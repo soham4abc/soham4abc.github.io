@@ -578,6 +578,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -602,7 +603,7 @@ var AppModule = /** @class */ (function () {
                 _beds_beds_component__WEBPACK_IMPORTED_MODULE_23__["BedsComponent"],
                 _ambulance_ambulance_component__WEBPACK_IMPORTED_MODULE_24__["AmbulanceComponent"],
                 _vols_vols_component__WEBPACK_IMPORTED_MODULE_25__["VolsComponent"],
-                _donate_donate_component__WEBPACK_IMPORTED_MODULE_26__["DonateComponent"]
+                _donate_donate_component__WEBPACK_IMPORTED_MODULE_26__["DonateComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -610,10 +611,10 @@ var AppModule = /** @class */ (function () {
                 _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
                 ngx_bootstrap_collapse__WEBPACK_IMPORTED_MODULE_5__["CollapseModule"].forRoot(),
-                ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"].forRoot()
+                ngx_toastr__WEBPACK_IMPORTED_MODULE_6__["ToastrModule"].forRoot(),
             ],
-            providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
+            providers: [{ provide: _angular_common__WEBPACK_IMPORTED_MODULE_3__["LocationStrategy"], useClass: _angular_common__WEBPACK_IMPORTED_MODULE_3__["HashLocationStrategy"] }],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]],
         })
     ], AppModule);
     return AppModule;
@@ -1044,7 +1045,7 @@ var NavbarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<aside class=\"sidebar shadow-sm\">\n  <div\n    class=\"sidebar-profile d-flex flex-column justify-content-center pt-5 pb-3\"\n  >\n    <div class=\"picture-wrapper mb-4\">\n      <div class=\"user-picture m-auto\">\n        <img src=\"./assets/img/user.jpg\" class=\"img-fluid\" alt=\"\" />\n      </div>\n    </div>\n    <div class=\"profile-details text-center pb-4\">\n      <p class=\"mb-0 text-uppercase name\">Red Volunteers</p>\n      <small class=\"text-uppercase role\">Covid-19 Resources</small>\n    </div>\n  </div>\n  <div class=\"sidebar-search pt-1 pb-1 pl-3 pr-3\">\n    <input\n      type=\"search\"\n      class=\"form-control rounded-pill\"\n      name=\"search\"\n      placeholder=\"Search ...\"\n    />\n  </div>\n  <nav class=\"sidebar-menu pt-3 pb-3\">\n    <div class=\"menu-header mt-3 mb-2\">Components</div>\n    <ul class=\"menu-items\">\n      <li>\n        <a href=\"#\" routerLink=\"/dashboard\" routerLinkActive=\"active\">\n          <i class=\"fa fa-tv\"></i>\n          <span>Home</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/oxygen\" routerLinkActive=\"active\">\n          <i class=\"fa fa-cloud\"></i>\n          <span>Oxygen</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/beds\" routerLinkActive=\"active\">\n          <i class=\"fa fa-bed\"></i>\n          <span>Covid-19 Beds</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/ambu\" routerLinkActive=\"active\">\n          <i class=\"fa fa-car\"></i>\n          <span>Ambulances</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/volunteers\" routerLinkActive=\"active\">\n          <i class=\"fa fa-align-center\"></i>\n          <span>Volunteers</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/donate\" routerLinkActive=\"active\">\n          <i class=\"fas fa-bell\"></i>\n          <span>Donate Us!!</span>\n        </a>\n      </li>\n    </ul>\n  </nav>\n</aside>\n"
+module.exports = "<aside class=\"sidebar shadow-sm\">\n  <div\n    class=\"sidebar-profile d-flex flex-column justify-content-center pt-5 pb-3\"\n  >\n    <div class=\"picture-wrapper mb-4\">\n      <div class=\"user-picture m-auto\">\n        <img src=\"./assets/img/user.jpg\" class=\"img-fluid\" alt=\"\" />\n      </div>\n    </div>\n    <div class=\"profile-details text-center pb-4\">\n      <p class=\"mb-0 text-uppercase name\">Red Volunteers</p>\n      <small class=\"text-uppercase role\">Covid-19 Resources</small>\n    </div>\n  </div>\n  <div class=\"sidebar-search pt-1 pb-1 pl-3 pr-3\">\n    <input\n      type=\"search\"\n      class=\"form-control rounded-pill\"\n      name=\"search\"\n      placeholder=\"Search ...\"\n    />\n  </div>\n  <nav class=\"sidebar-menu pt-3 pb-3\">\n    <div class=\"menu-header mt-3 mb-2\">Components</div>\n    <ul class=\"menu-items\">\n      <li>\n        <a href=\"#\" routerLink=\"/dashboard\" routerLinkActive=\"active\">\n          <i class=\"fa fa-tv\"></i>\n          <span>Home</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/oxygen\" routerLinkActive=\"active\">\n          <i class=\"fa fa-cloud\"></i>\n          <span>Oxygen</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/beds\" routerLinkActive=\"active\">\n          <i class=\"fa fa-bed\"></i>\n          <span>Covid-19 Beds</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/ambu\" routerLinkActive=\"active\">\n          <i class=\"fa fa-car\"></i>\n          <span>Ambulances</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"http://rourab.com/redvol/\" routerLinkActive=\"active\">\n          <i class=\"fa fa-align-center\"></i>\n          <span>Volunteers</span>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\" routerLink=\"/donate\" routerLinkActive=\"active\">\n          <i class=\"fas fa-bell\"></i>\n          <span>Donate Us!!</span>\n        </a>\n      </li>\n    </ul>\n  </nav>\n</aside>\n"
 
 /***/ }),
 
